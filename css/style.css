@@ -4,6 +4,10 @@ body {
   width: 100%;
 }
 
+.html {
+  font-size: 10px;
+}
+
 /*Wrapper - Purely for laying out components in this document*/
 .wrapper {
   max-width: 1280px;
@@ -12,9 +16,9 @@ body {
 
 /*Heading for component library*/
 .component-heading {
-  font-size:28px;
-  font-weight:300;
-  margin-bottom:3rem;
+  font-size: 1.75rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
 }
 
 /*Margin between components*/
@@ -27,17 +31,17 @@ body {
 /*Label for components*/
 .component-label {
   font-weight: 300;
-  font-size: 24px;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
 }
 
 a {
-  margin: 0px;
+  margin: 0;
   cursor: pointer;
 }
 
 .full-opacity {
-  opacity:1!important;
+  opacity: 1 !important;
 }
 
 .margin-bottom {
@@ -57,12 +61,12 @@ a {
 }
 
 .uppercase {
-  text-transform:uppercase;
+  text-transform: uppercase;
 }
 
 p, label {
   color: rgba(0, 0, 0, 0.8);
-  font-size: 13px;
+  font-size: 0.8rem;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -95,7 +99,7 @@ li {
 
 /*Font styles*/
 .regular {
-  font-weight:400;
+  font-weight: 400;
 }
 
 .semibold {
@@ -120,33 +124,33 @@ h1 {
 }
 
 h2 {
-  font-size:16px;
-  font-weight:700;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 h3 {
-  font-size: 14px;
-  font-weight:700;
+  font-size: 0.88rem;
+  font-weight: 700;
 }
 
 h4 {
   opacity: 0.7;
-  font-size: 14px;
+  font-size: 0.88rem;
   color: #000000;
 }
 
 h5 {
   font-weight: 600;
-  opacity:0.8;
-  font-size: 14px;
+  opacity: 0.8;
+  font-size: 0.88rem;
   color: #000000;
-  text-transform:uppercase;
+  text-transform: uppercase;
 }
 
 /*Input styling*/
 input[type="checkbox"] {
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 input[type="text"] {
@@ -154,7 +158,7 @@ input[type="text"] {
   border: 1px solid #D6D6D6;
   border-radius: 3px;
   padding: 0.6rem;
-  font-size: 13px;
+  font-size: 0.8rem;
   width: 22rem;
   box-sizing: border-box;
 }
@@ -172,7 +176,7 @@ textarea {
   border: 1px solid #D6D6D6;
   border-radius: 3px;
   padding: 0.6rem;
-  font-size: 13px;
+  font-size: 0.8rem;
   width: 22rem;
   box-sizing: border-box;
 }
@@ -184,19 +188,19 @@ select {
   border: 1px solid #D6D6D6;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.10);
   border-radius: 3px;
-  font-size: 13px;
+  font-size: 0.8rem;
 }
 
 /* Toggle Switches*/
 input[type="checkbox"].switch_1 {
-  font-size: 20px;
+  font-size: 1.25rem;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   width: 2.2rem;
   height: 1.2rem;
   background: #d6d6d6;
-  border-radius: 100px;
+  border-radius: 10rem;
   position: relative;
   cursor: pointer;
   outline: none;
@@ -228,18 +232,32 @@ input[type="checkbox"].switch_1:checked:after {
   left: calc(100% - 1.2rem);
 }
 
+/*Container shadow and modal styling*/
+.container-shadow {
+  background: #FFFFFF;
+  border: 1px solid #D6D6D6;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05), 0 2px 1px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+.modal {
+  background: #FFFFFF;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05), 0 2px 1px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
 /*Slider Switch*/
 .slider-switch-bg {
   background: #D6D6D6;
   width: 25rem;
-  border-radius: 100px;
+  border-radius: 10rem;
   height: 0.25rem;
 }
 
 .slider-switch-active {
   background: #236DE7;
   width: 5rem;
-  border-radius: 100px;
+  border-radius: 10rem;
   height: 0.25rem;
 }
 
@@ -247,18 +265,18 @@ input[type="checkbox"].switch_1:checked:after {
   width: 1rem;
   height: 1rem;
   background: #236DE7;
-  border-radius: 100px;
+  border-radius: 10rem;
   position: absolute;
   margin-top: -0.35rem;
 }
 
 .link {
   color: #0073AA;
-  font-size: 14px;
+  font-size: 0.88rem;
   font-weight: 600;
   text-decoration: underline;
   opacity: 1;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 /*colors */
@@ -398,7 +416,7 @@ input[type="checkbox"].switch_1:checked:after {
 }
 
 .license-status {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 600;
   margin-left: 0.25rem;
   opacity: 1;
@@ -410,7 +428,7 @@ input[type="checkbox"].switch_1:checked:after {
 
 /*Nav*/
 .nav {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
   padding: 0rem 2rem;
@@ -440,7 +458,7 @@ input[type="checkbox"].switch_1:checked:after {
 
 .subnav-item {
   opacity: 0.4;
-  font-size: 15px;
+  font-size: 0.94rem;
   color: #000000;
   font-weight: 600;
   margin-right: 2rem;
@@ -457,27 +475,21 @@ input[type="checkbox"].switch_1:checked:after {
 
 /*Accordion Collapsed*/
 .accordion-collapsed {
-  border: 1px solid #D6D6D6;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05), 0 2px 1px 0 rgba(0, 0, 0, 0.05);
-  border-radius: 4px;
   padding: 0.5rem 1.5rem;
 }
 
 /*Accordion Locked*/
 .accordion-locked {
   opacity: 0.5;
-  background: #FFFFFF;
   border: 1px solid #999999;
-  border-radius: 4px;
   padding: 0.5rem 1.5rem;
+  border-radius: 4px;
 }
 
 /*Accordion Expanded*/
 .accordion-expand {
-  margin-top: -2px;
-  border: 1px solid #D6D6D6;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05), 0 2px 1px 0 rgba(0, 0, 0, 0.05);
-  border-radius: 0 0 4px 4px;
+  margin-top: -0.15rem;
+  border-radius: 0 0 4px 4px !important;
   padding: 1rem 1rem;
   padding-bottom: 2.5rem;
   justify-content: space-between;
@@ -488,7 +500,7 @@ input[type="checkbox"].switch_1:checked:after {
   background: #FFFFFF;
   border: 1px solid #D6D6D6;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
-  border-radius: 5px;
+  border-radius: 3px;
   padding: 0rem 1.25rem;
   min-height: 3.5rem;
   margin: 1.25rem 0.6rem 0 0.6rem;
@@ -506,7 +518,7 @@ input[type="checkbox"].switch_1:checked:after {
 
 .nested-accordion-title {
   opacity: 0.7;
-  font-size: 14px;
+  font-size: 0.88rem;
   font-weight: 600;
   color: #000000;
   margin: 0rem;
@@ -560,7 +572,7 @@ input[type="checkbox"].switch_1:checked:after {
 }
 
 .nested-accordion-expanded-title {
-  font-size: 14px;
+  font-size: 0.88rem;
   font-weight: 700;
   color: #fff;
   margin-left: 1rem;
@@ -576,7 +588,7 @@ input[type="checkbox"].switch_1:checked:after {
 
 .accordion-preview {
   opacity: 0.6;
-  font-size: 13px;
+  font-size: 0.8rem;
   font-weight: 400;
 }
 
@@ -600,12 +612,12 @@ input[type="checkbox"].switch_1:checked:after {
   border: 1px solid rgba(35, 109, 231, 1);
   color: #fff;
   border-radius: 4px;
-  font-size: 13px;
+  font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 700;
   padding: 1.25rem 2.25rem;
   text-align: left;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.05rem;
   cursor: pointer;
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.40);
   text-align: center;
@@ -676,7 +688,7 @@ input[type="checkbox"].switch_1:checked:after {
   margin-right: 0.2rem;
 }
 
-.btn-tooltip-outline {
+.btn-tooltip-stroke {
   padding: 0.4rem 0.7rem;
   opacity: 1;
   letter-spacing: 0;
@@ -687,7 +699,7 @@ input[type="checkbox"].switch_1:checked:after {
   color: #9a9a9a;
   box-shadow: none;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 0.8rem;
   font-weight: 700;
   text-align: center;
 }
@@ -698,7 +710,7 @@ input[type="checkbox"].switch_1:checked:after {
 
 /*Notifications*/
 .notification {
-  font-size: 13px;
+  font-size: 0.8rem;
   padding: 1.2rem 1.5rem;
   box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.05), 0 1px 3px 0 rgba(0, 0, 0, 0.10);
   border-radius: 2px;
@@ -729,7 +741,7 @@ input[type="checkbox"].switch_1:checked:after {
 
 .action-title {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 0.88rem;
   opacity: 0.6;
   width: 50%;
   margin-top: 1.5rem;
@@ -743,7 +755,7 @@ input[type="checkbox"].switch_1:checked:after {
 }
 
 .action-title-locked {
-  font-size: 14px;
+  font-size: 0.88rem;
   width: 50%;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
@@ -806,7 +818,7 @@ input[type="checkbox"].switch_1:checked:after {
 /*Saved Tooltip Overlay*/
 .tooltip-saved {
   background: #FFFFFF;
-  box-shadow: 0 3px 60px 0 rgba(0, 0, 0, 0.15), 0 2px 5px 0 rgba(0, 0, 0, 0.20);
+  box-shadow: 0 1px 4px rgba(0, 0, 9, 0.12);
   border-radius: 3px;
   padding: 0.3rem 0.6rem;
 }
@@ -816,7 +828,7 @@ input[type="checkbox"].switch_1:checked:after {
 }
 
 .tooltip-saved p {
-  font-size: 13px;
+  font-size: 0.8rem;
   font-weight: 600;
 }
 
@@ -840,10 +852,6 @@ tr:nth-child(odd) {
 }
 
 .table {
-  background: #FFFFFF;
-  border: 1px solid #D6D6D6;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05), 0 2px 1px 0 rgba(0, 0, 0, 0.05);
-  border-radius: 4px;
   width: 100%;
 }
 
@@ -907,12 +915,8 @@ table {
   border: 1px solid #236DE7;
 }
 
-
 /*Migration Progress Bar States*/
 .migration-progress {
-  background: #FFFFFF;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05), 0 2px 1px 0 rgba(0, 0, 0, 0.05);
-  border-radius: 4px;
   padding: 2rem;
   padding-left: 3.25rem;
   padding-right: 3.25rem;
@@ -926,14 +930,14 @@ table {
 
 .migration-timer {
   opacity: 0.5;
-  font-size: 14px;
+  font-size: 0.88rem;
   color: #000000;
   text-align: right;
 }
 
 .migration-progress-steps {
   align-items: center;
-  font-size: 12px;
+  font-size: 0.75rem;
   display: flex;
   margin-right: 1rem;
   margin-top: 1rem;
@@ -950,16 +954,15 @@ table {
 }
 
 .migration-percentage {
-  font-size: 26px;
+  font-size: 1.6rem;
   font-weight: 400;
   color: #236DE7;
-  line-height: 19px;
   margin-right: 0.5rem;
 }
 
 .migration-data-transferred {
   opacity: 0.5;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #000000;
   text-transform: uppercase;
 }
@@ -967,14 +970,11 @@ table {
 .migration-progress-bar {
   width: 100%;
   height: 0.5rem;
-  border-radius: 50px;
+  border-radius: 5rem;
   margin-top: 0.75rem;
 }
 
 .migration-complete {
-  background: #FFFFFF;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05), 0 2px 1px 0 rgba(0, 0, 0, 0.05);
-  border-radius: 4px;
   padding: 2rem;
   max-width: 36rem;
 }
@@ -988,7 +988,7 @@ table {
 .migration-complete-summary {
   margin-top: 2rem;
   opacity: 1;
-  font-size: 17px;
+  font-size: 1.06rem;
   font-weight: 300;
   margin-bottom: 2rem;
 }
@@ -1007,7 +1007,7 @@ table {
 
 .twitter {
   position: absolute;
-  top: 6px;
+  top: 0.4rem;
   right: 0;
 }
 
@@ -1019,7 +1019,7 @@ table {
 }
 
 .review-container-text {
-  font-size: 16px;
+  font-size: 1rem;
   color: #236DE7;
 }
 
@@ -1029,9 +1029,6 @@ table {
 }
 
 .migration-free-advert {
-  background: #FFFFFF;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05), 0 2px 1px 0 rgba(0, 0, 0, 0.05);
-  border-radius: 4px;
   padding: 3rem;
   padding-left: 3.25rem;
   padding-right: 3.25rem;
@@ -1041,8 +1038,6 @@ table {
 .migration-free-advert h2 {
   margin-bottom: 2rem;
 }
-
-
 
 .migration-free-advert li {
   padding: 0.35rem 0rem;
@@ -1079,12 +1074,8 @@ table {
 
 /*Addon containers*/
 .addon-container {
-  background: #FFFFFF;
   max-width: 15rem;
   min-height: 22rem;
-  border: 1px solid #D6D6D6;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05), 0 2px 1px 0 rgba(0, 0, 0, 0.05);
-  border-radius: 4px;
   padding: 1.25rem 1.75rem;
   margin-right: 1rem;
 }
@@ -1109,7 +1100,6 @@ table {
 }
 
 .addon-link {
-  font-size: 13px;
   font-weight: 700;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
@@ -1139,9 +1129,6 @@ table {
 
 /*Sidebar*/
 .sidebar {
-  background: #FFFFFF;
-  border: 1px solid #999999;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05), 0 2px 1px 0 rgba(0, 0, 0, 0.05);
   border-radius: 4px;
   max-width: 16rem;
 }
@@ -1157,7 +1144,7 @@ table {
 .sidebar h3 {
   margin-bottom: 1rem;
   font-weight: 400;
-  font-size: 21px;
+  font-size: 1.3rem;
 }
 
 .sidebar-input-text {
@@ -1168,7 +1155,7 @@ table {
   background: #FFFFFF;
   border: 1px solid #D6D6D6;
   border-radius: 3px;
-  font-size: 13px;
+  font-size: 0.8rem;
 }
 
 .coupon-text {
@@ -1186,7 +1173,7 @@ table {
 
 .sidebar-smalltext {
   opacity: 0.5;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #000000;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
@@ -1198,35 +1185,31 @@ table {
 }
 
 .sidebar-tweet-testmonial h5 {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .sidebar-tweet-text {
-  font-size: 14px;
+  font-size: 0.88rem;
   color: #FFFFFF;
   margin-top: 1rem;
   margin-bottom: 0.25rem;
 }
 
 .documentation-panel {
-  background: #FFFFFF;
-  border: 1px solid #D6D6D6;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05), 0 2px 1px 0 rgba(0, 0, 0, 0.05);
-  border-radius: 4px;
-  padding:2rem;
-  max-width:11.5rem;
+  padding: 2rem;
+  max-width: 11.5rem;
 }
 
 .documentation-panel h2 {
-font-size: 16px;
-color: #04223F;
-margin-bottom:1.5rem;
+  font-size: 1rem;
+  color: #04223F;
+  margin-bottom: 1.5rem;
 }
 
 .documentation-link {
-font-size: 16px;
+  font-size: 1rem;
 }
 
 .documentation-panel li {
-  padding:0.25rem 0rem;
+  padding: 0.25rem 0rem;
 }
