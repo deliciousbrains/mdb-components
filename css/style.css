@@ -8,36 +8,29 @@ body {
   font-size: 10px;
 }
 
+
 /*Wrapper - Purely for laying out components in this document*/
 .wrapper {
   max-width: 1280px;
   margin: 100px;
 }
 
-/*Heading for component library*/
-.component-heading {
-  font-size: 1.75rem;
-  font-weight: 300;
-  margin-bottom: 3rem;
-}
-
-/*Margin between components*/
-.component-margin {
-  height: 4rem;
-  width: 100%;
-  background: transparent;
-}
-
-/*Label for components*/
-.component-label {
-  font-weight: 300;
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-}
-
 a {
   margin: 0;
   cursor: pointer;
+  text-decoration: none;
+}
+
+button {
+  padding:0;
+  margin:0;
+  border: 0;
+  background: none;
+  cursor:pointer;
+}
+
+.btn-no-outline {
+  outline:0;
 }
 
 .full-opacity {
@@ -145,6 +138,36 @@ h5 {
   font-size: 0.88rem;
   color: #000000;
   text-transform: uppercase;
+}
+
+.icon-16 {
+  width:16px;
+  height: 16px;
+}
+
+.icon-20 {
+  width:20px;
+  height: 20px;
+}
+
+.icon-24 {
+  width:24px;
+  height: 24px;
+}
+
+.icon-32 {
+  width:32px;
+  height: 32px;
+}
+
+.icon-64 {
+  width:64px;
+  height: 64px;
+}
+
+.icon-128 {
+  width:128px;
+  height: 128px;
 }
 
 /*Input styling*/
@@ -413,6 +436,8 @@ input[type="checkbox"].switch_1:checked:after {
   -webkit-filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.2));
   filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.2));
   margin-right: 1rem;
+  width: 52px;
+  height: 52px;
 }
 
 .license-status {
@@ -439,14 +464,20 @@ input[type="checkbox"].switch_1:checked:after {
 
 .nav-item {
   padding: 0.6rem;
-  color: #999;
   margin-right: 1.25rem;
   padding-bottom: 0.8rem;
 }
 
 .nav-item-active {
-  color: #04223F;
   border-bottom: 3px solid #000;
+}
+
+.nav-item a {
+    color: #999;
+}
+
+.nav-item-active a {
+    color: #04223F;
 }
 
 /*Sub nav*/
@@ -459,7 +490,6 @@ input[type="checkbox"].switch_1:checked:after {
 .subnav-item {
   opacity: 0.4;
   font-size: 0.94rem;
-  color: #000000;
   font-weight: 600;
   margin-right: 2rem;
   padding-left: 0.5rem;
@@ -468,14 +498,25 @@ input[type="checkbox"].switch_1:checked:after {
 }
 
 .subnav-item-active {
-  color: #236DE7;
   opacity: 1;
   border-bottom: 3px solid rgba(35, 109, 231, 1);
+}
+
+.subnav-item a {
+  color: #000000;
+}
+
+.subnav-item-active a {
+  color: #236DE7;
 }
 
 /*Accordion Collapsed*/
 .accordion-collapsed {
   padding: 0.5rem 1.5rem;
+}
+
+.accordion-label-container {
+  width:10rem;
 }
 
 /*Accordion Locked*/
@@ -486,7 +527,32 @@ input[type="checkbox"].switch_1:checked:after {
   border-radius: 4px;
 }
 
+.locked-accordion-link {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.accordion-icon-locked {
+  margin-right: 1rem;
+  opacity:1!important;
+  width:20px;
+  height:20px;
+}
+
+.accordion-locked h2 {
+  opacity: 1;
+}
+
+.accordion-locked p {
+  opacity: 1;
+}
+
 /*Accordion Expanded*/
+
+.accordion-wrap {
+  min-width:70rem;
+}
+
+
 .accordion-expand {
   margin-top: -0.15rem;
   border-radius: 0 0 4px 4px !important;
@@ -506,10 +572,6 @@ input[type="checkbox"].switch_1:checked:after {
   margin: 1.25rem 0.6rem 0 0.6rem;
   cursor: pointer;
   flex-grow: 1;
-}
-
-.arrow {
-  cursor: pointer;
 }
 
 .nested-accordion-arrow {
@@ -590,20 +652,6 @@ input[type="checkbox"].switch_1:checked:after {
   opacity: 0.6;
   font-size: 0.8rem;
   font-weight: 400;
-}
-
-.accordion-icon-locked {
-  width: 1.2rem;
-  height: 1.2rem;
-  margin-right: 1rem;
-}
-
-.accordion-locked h2 {
-  opacity: 1;
-}
-
-.accordion-locked p {
-  opacity: 1;
 }
 
 /*Buttons*/
@@ -719,7 +767,7 @@ input[type="checkbox"].switch_1:checked:after {
 }
 
 .notification-content {
-  max-width: 700px;
+  max-width: 44rem;
   line-height: 1.5;
 }
 
@@ -870,6 +918,18 @@ tr {
 
 table {
   width: 100%;
+}
+
+.table-col-date {
+  flex-grow:4;
+}
+
+.table-col-item {
+  flex-grow:16;
+}
+
+.table-col-action {
+  flex-grow:1;
 }
 
 /*Container*/
@@ -1066,12 +1126,6 @@ table {
   margin-bottom: 0.5rem;
 }
 
-.addon-container-divider {
-  width: 100%;
-  height: 1px;
-  margin: 1rem 0rem;
-}
-
 /*Addon containers*/
 .addon-container {
   max-width: 15rem;
@@ -1091,7 +1145,13 @@ table {
   margin-top: auto;
 }
 
-.installed-activated-icon {
+.addon-content {
+  border-top: 1px solid #d6d6d6;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.addon-bottom-controls {
   margin-top: auto;
 }
 
@@ -1211,5 +1271,5 @@ table {
 }
 
 .documentation-panel li {
-  padding: 0.25rem 0rem;
+  padding: 0.35rem 0rem;
 }
