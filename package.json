@@ -4,15 +4,11 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
-    "grunt": "^1.0.4",
+    "gulp": "^4.0.2",
     "gulp-inject": "^5.0.4",
     "gulp-path": "^4.0.0",
     "gulp-rename": "^1.4.0",
     "gulp-svgmin": "^2.2.0",
-    "rename": "^1.0.4"
-  },
-  "devDependencies": {
-    "gulp": "^4.0.2",
     "gulp-svgstore": "^7.0.1"
   },
   "scripts": {

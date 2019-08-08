@@ -1,5 +1,3 @@
-
-
 var gulp = require('gulp');
 var svgstore = require('gulp-svgstore');
 var svgmin = require('gulp-svgmin');
