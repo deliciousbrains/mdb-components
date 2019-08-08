@@ -1,0 +1,14 @@
+/*Heading for component library*/
+.component-heading {
+  font-size: 1.75rem;
+  font-weight: 300;
+  margin-bottom:4rem;
+}
+
+/*Label for components*/
+.component-label {
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin-top:4rem;
+  margin-bottom: 2rem;
+}
