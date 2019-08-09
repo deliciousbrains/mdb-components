@@ -2,11 +2,10 @@
 <html>
 
 <head>
+  <meta content="width=1280, maximum-scale=1.0" name="viewport" />
   <link href="./img/favicon.png" rel="shortcut icon" />
   <meta charset="utf-8" />
-  <meta content="width=1280, maximum-scale=1.0" name="viewport" />
   <link href="./css/flexboxgrid.min.css" rel="stylesheet" type="text/css" />
-  <link href="./css/normalize.css" rel="stylesheet" type="text/css" />
   <link href="./css/component-layout.css" rel="stylesheet" type="text/css" />
   <link href="./css/style.css" rel="stylesheet" type="text/css" />
   </meta>
@@ -15,1341 +14,1338 @@
 <body style="background-color: #f1f1f1;">
 
   <!--1250px wrapper-->
-  <div class="wrapper">
+  <div class="wpmdb">
+    <div class="wrapper">
+
+
+      <h1 class="component-heading">Migrate DB Pro - Component Library</h1>
 
 
 
-    <h1 class="component-heading">Migrate DB Pro - Component Library</h1>
+      <!--COMPONENT LABEL-->
+      <p class="component-label">Header</p>
 
 
 
-    <!--COMPONENT LABEL-->
-    <p class="component-label">Header</p>
+      <!--HEADER-->
 
+      <div class="header bg-brand-light flex-container">
 
-
-    <!--HEADER-->
-
-    <div class="header bg-brand-light flex-container">
-
-      <svg class="medallion">
-        <use xlink:href="img/icons.svg#mdb-medallion" />
-      </svg>
-
-      <h1>Migrate DB Pro</h1>
-
-      <div class="align-right">
-        <svg class="icon-24">
-          <use xlink:href="img/icons.svg#license-checked" />
+        <svg class="medallion">
+          <use xlink:href="img/icons.svg#mdb-medallion" />
         </svg>
-      </div>
 
-      <p class="license-status text-brand-dark">License: <a href=""><span class="license text-primary">Developer</span></a>
+        <h1>Migrate DB Pro</h1>
 
-    </div>
-
-
-
-    <!--COMPONENT LABEL-->
-    <p class="component-label">Nav</p>
-    <!--COMPONENT LABEL-->
-
-
-
-    <!--NAV-->
-    <ul class="nav bg-white flex-container">
-      <li class="nav-item nav-item-active">
-        <a href="">Profiles</a>
-      </li>
-      <li class="nav-item">
-        <a href="">Migrate</a>
-      </li>
-      <li class="nav-item">
-        <a href="">Backups</a>
-      </li>
-      <li class="nav-item ">
-        <a href="">Settings</a>
-      </li>
-      <li class="nav-item">
-        <a href="">Addons</a>
-      </li>
-      <li class="nav-item">
-        <a href="">Help</a>
-      </li>
-    </ul>
-
-
-    <br /><br />
-
-
-
-    <!--SUB NAV-->
-
-    <ul class="subnav flex-container">
-      <li class="subnav-item subnav-item-active">
-        <a href="">Email Support</a>
-      </li>
-      <li class="subnav-item">
-        <a href="">Videos</a>
-      </li>
-    </ul>
-
-
-
-    <!--COMPONENT LABEL-->
-    <p class="component-label">Accordion States</p>
-    <!--COMPONENT LABEL-->
-
-
-
-    <!--ACCORDION COLLAPSED-->
-    <div class="accordion-wrap">
-      <div class="accordion-collapsed container-shadow bg-white flex-container">
-        <div class="accordion-label-container flex-container">
-          <input type="checkbox" class="accordion-checkbox">
-          <h2>Label</h2>
-        </div>
-
-        <div class="accordion-divider bg-grey-light"></div>
-
-        <p class="accordion-preview">
-          Accordion summary preview
-        </p>
-
-        <button class="align-right btn-no-outline">
-          <svg class="icon-16">
-            <use xlink:href="img/icons.svg#arrow" />
+        <div class="align-right">
+          <svg class="icon-24">
+            <use xlink:href="img/icons.svg#license-checked" />
           </svg>
-        </button>
-
-      </div>
-    </div>
-
-
-
-    <br />
-
-
-
-    <!--ACCORDION LOCKED-->
-    <div class="accordion-wrap">
-      <div class="accordion-locked bg-white flex-container">
-        <div class="accordion-label-container flex-container">
-          <input type="checkbox" class="accordion-checkbox" disabled>
-          <h2>Label</h2>
         </div>
 
-        <div class="accordion-divider bg-grey-light"></div>
-
-        <svg class="accordion-icon-locked icon-16" width="24" height="24" viewBox="0 0 24 24">
-          <use xlink:href="img/icons.svg#action-locked" />
-        </svg>
-
-        <p class="accordion-preview">
-          <a href="" class="locked-accordion-link underline">Upgrade to Pro</a> to push and pull Plugin files
-        </p>
+        <p class="license-status text-brand-dark">License: <a href=""><span class="license text-primary">Developer</span></a>
 
       </div>
-    </div>
 
 
 
-    <br />
+      <!--COMPONENT LABEL-->
+      <p class="component-label">Nav</p>
+      <!--COMPONENT LABEL-->
 
 
 
-    <!--ACCORDION EXPANDED-->
-    <div class="accordion-wrap">
-      <div class="accordion-collapsed container-shadow bg-white flex-container">
-        <div class="accordion-label-container flex-container">
-          <input type="checkbox" class="accordion-checkbox">
-          <h2>Label</h2>
-        </div>
-
-        <div class="accordion-divider bg-grey-light"></div>
-
-        <p class="accordion-preview">
-          Accordion summary preview
-        </p>
-
-        <button class="align-right btn-no-outline">
-          <svg class="icon-16">
-            <use xlink:href="img/icons.svg#arrow" />
-          </svg>
-        </button>
-      </div>
-
-      <div class="accordion-expand container-shadow bg-white">
-
-        <div class="flex-container">
-
-          <div class="column" style="flex:1">
-            <div class="nested-accordion flex-container">
-
-              <button class="btn-no-outline">
-                <svg class="icon-16 nested-accordion-arrow">
-                  <use xlink:href="img/icons.svg#arrow" />
-                </svg>
-              </button>
-
-              <div class="column">
-
-                <h4>Nested Accordion Title</h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="column" style="flex:1">
-            <div class="nested-accordion flex-container">
-
-              <button class="btn-no-outline">
-                <svg class="icon-16 nested-accordion-arrow">
-                  <use xlink:href="img/icons.svg#arrow" />
-                </svg>
-              </button>
-
-              <div class="column">
-
-                <h4>Nested Accordion Title</h4>
-                <p class="nested-accordion-preview">Nested accordion summary preview</p>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="flex-container">
-
-          <div class="nested-accordion flex-container">
-
-            <button class="btn-no-outline">
-              <svg class="icon-16 nested-accordion-arrow">
-                <use xlink:href="img/icons.svg#arrow" />
-              </svg>
-            </button>
-
-            <div class="column">
-
-              <h4>Nested Accordion Title</h4>
-              <div class="flex-container">
-                <p class="nested-accordion-preview">//test1.lewis.brains.us</p>
-
-                <svg class="icon-16 arrow-search-replace">
-                  <use xlink:href="img/icons.svg#search-replace-arrow" />
-                </svg>
-
-                <p class="nested-accordion-preview">//test2.lewis.brains.us</p>
-
-                <p class="nested-accordion-preview-divider">|</p>
-
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="flex-container">
-
-          <div class="nested-accordion-expanded flex-container">
-
-            <button class="btn-no-outline">
-              <svg class="icon-16 nested-accordion-arrow-expanded">
-                <use xlink:href="img/icons.svg#arrow" />
-              </svg>
-            </button>
-
-            <div class="column">
-
-              <h4 class="full-opacity text-white">Nested Accordion Title (Expanded)</h4>
-            </div>
-          </div>
-        </div>
-
-        <div class="nested-accordion-expanded-body">
-          <p>Accordion content</p>
-
-        </div>
-      </div>
-    </div>
-
-
-
-    <!--COMPONENT LABEL-->
-    <p class="component-label">Notifications</p>
-    <!--COMPONENT LABEL-->
-
-
-
-    <!--NOTIFICATIONS-->
-
-    <!--Horizontal-->
-    <div class="notification bg-white flex-container">
-      <h3>Update Available -&nbsp;</h3>
-      <p>WP Migrate DB Pro 1.9.6 is now available. You currently have 1.9.5 installed. &nbsp;
-      </p><a href="" class="link">Update Now</a>
-    </div>
-
-
-
-    <br />
-
-
-
-    <!--Vertical (Text heavy)-->
-    <div class="notification bg-white column">
-      <div class="notification-content">
-        <h3 class="margin-bottom">Warning: Different Table Prefixes</h3>
-        <p>Whoa! We’ve detected that the database table prefix differs between installations. Running the migration will create new database tables in your remote database with prefix “wp_”.</p>
-        <p>However, your remote install is configured to use table prefix “wp_” and will ignore the migrated tables.
-          So, AFTER migration is complete, you will need to edit your remote install’s wp-config.php and change the
-          “$table_prefix” variable to “wp_”.</p>
-      </div>
-    </div>
-
-
-
-    <!--COMPONENT LABEL-->
-    <p class="component-label">Buttons</p>
-    <!--COMPONENT LABEL-->
-
-
-
-    <!--BUTTONS-->
-
-    <div class="flex-container">
-
-      <!--Primary button-->
-      <button class="btn">Label</button> &nbsp;&nbsp;
-
-      <!--Stroke button-->
-      <button class="btn btn-stroke">Label</button> &nbsp;&nbsp;
-
-      <!--Disabled button-->
-      <button class="btn btn-disabled">Label</button> &nbsp;&nbsp;
-
-      <!--Primary button (Small)-->
-      <button class="btn btn-sm">Label</button> &nbsp;&nbsp;
-
-      <!--Stroke button (Small)-->
-      <button class="btn btn-sm btn-stroke">Label</button> &nbsp;&nbsp;
-
-      <!--Disabled button (Small)-->
-      <button class="btn btn-sm btn-disabled">Label</button> &nbsp;&nbsp;
-
-      <!--Icon button (Small)-->
-      <button class="btn btn-sm btn-stroke">
-        <div class="flex-container">
-          <div class="btn-sm-icon">
-            <svg class="icon-16 btn-tooltip-icon">
-              <use xlink:href="img/icons.svg#add" />
-            </svg>
-          </div>
-          Label
-      </button> &nbsp;&nbsp;
-
-      <!--Icon button (Toolip)-->
-      <button class="btn btn-tooltip">
-        <div class="flex-container">
-          <div>
-
-            <svg class="icon-16 btn-tooltip-icon">
-              <use xlink:href="img/icons.svg#check-white" />
-            </svg>
-
-          </div>
-          Save
-      </button>
-
-      <!--Icon button (Toolip outline)-->
-      <button class="btn-tooltip-stroke">Cancel</button>
-
-    </div>
-
-
-
-    <!--COMPONENT LABEL-->
-    <p class="component-label">Action Controls</p>
-    <!--COMPONENT LABEL-->
-
-
-
-    <!--Default Action-->
-    <div class="flex-container">
-      <button class="flex-container action-icon btn-no-outline">
-        <p class="action-title text-center">Action Title</p>
-        <svg class="icon-24">
-          <use xlink:href="img/icons.svg#action-backup-database" />
-        </svg>
-      </button>
-
-      <!--Locked Action-->
-      <button class="flex-container action-icon btn-no-outline">
-        <p class="action-title-locked text-center">Action Title</p>
-        <svg class="icon-24">
-          <use xlink:href="img/icons.svg#action-locked" />
-        </svg>
-      </button>
-    </div>
-
-
-
-    <!--COMPONENT LABEL-->
-    <p class="component-label">Checkbox / Radio Button / Toggle Switch</p>
-    <!--COMPONENT LABEL-->
-
-
-
-    <!--Checkbox-->
-    <ul>
-      <li>
-        <input type="checkbox" name="" value="">
-        <label>Checkbox label</label>
-      </li>
-    </ul>
-
-
-
-    <!--Radio Button-->
-    <ul>
-      <li>
-        <input type="radio" name="name" value="">
-        <label>Radio button label</label>
-      </li>
-    </ul>
-
-
-
-    <br />
-
-
-
-    <!--Toggle-->
-    <div class="switch_box box_1">
-      <input type="checkbox" class="switch_1">
-    </div>
-
-
-
-    <br />
-
-
-
-    <!--Slider Switch-->
-    <div class="slider-switch-bg">
-      <div class="slider-switch-active">
-        <div style="margin-left:4rem;" class="slider-switch">
-        </div>
-      </div>
-    </div>
-
-
-
-    <!--COMPONENT LABEL-->
-    <p class="component-label">Textboxes</p>
-    <!--COMPONENT LABEL-->
-
-
-
-    <!--Textboxes-->
-    <input type="text" name="" class="text-black" placeholder="Placeholder text...">
-
-    <br /><br />
-
-    <input type="text" name="" class="text-black" placeholder="Readonly Placeholder text..." readonly>
-
-    <br /><br />
-
-    <textarea rows="3" name="" class="text-black" placeholder="Placeholder text..."></textarea>
-
-
-
-    <!--COMPONENT LABEL-->
-    <p class="component-label">Dropdown</p>
-    <!--COMPONENT LABEL-->
-
-
-
-    <!--Dropdown-->
-    <select>
-      <option value="">store.test1.lewis.brains.us</option>
-      <option value="">store.test2.lewis.brains.us</option>
-      <option value="">store.test3.lewis.brains.us</option>
-    </select>
-
-
-
-    <!--COMPONENT LABEL-->
-    <p class="component-label">Tooltip Overlays</p>
-    <!--COMPONENT LABEL-->
-
-
-
-    <!--Speech bubble (arrow left)-->
-    <div class="flex-container">
-      <div class="speech-shadow">
-        <div class="speech-bubble-left">
-          <p>Text goes here</p>
-        </div>
-      </div>
-    </div>
-
-
-
-    <br />
-
-
-
-    <!--Speech bubble (arrow top)-->
-    <div class="flex-container">
-      <div class="speech-shadow">
-        <div class="speech-bubble-top">
-          <p>Text goes here</p>
-        </div>
-      </div>
-    </div>
-
-
-
-    <br />
-
-
-
-    <!--Speech bubble (button tooltip)-->
-    <div class="flex-container">
-      <div class="speech-shadow">
-        <div class="speech-bubble-left">
-          <p class="margin-bottom">Are you sure?</p>
-
-          <!--Icon button (Toolip)-->
-          <div class="flex-container">
-            <button class="btn btn-tooltip">
-              <div class="flex-container">
-                <div>
-                  <svg class="icon-16 btn-tooltip-icon">
-                    <use xlink:href="img/icons.svg#check-white" />
-                  </svg>
-
-                </div>
-                Save
-            </button>
-
-            <!--Icon button (Toolip outline)-->
-            <button class="btn-tooltip-stroke">
-              Cancel
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-    <br />
-
-
-
-    <!--Saved tooltip-->
-    <div class="flex-container">
-      <div class="tooltip-saved flex-container">
-        <svg class="icon-24 tooltip-saved-icon">
-          <use xlink:href="img/icons.svg#check-circular" />
-        </svg>
-        <p>Saved</p>
-      </div>
-    </div>
-
-
-
-    <!--COMPONENT LABEL-->
-    <p class="component-label">Search and Replace</p>
-    <!--COMPONENT LABEL-->
-
-
-
-    <!--Search and Replace-->
-    <table>
-      <tr class="flex-container table-heading bg-trans">
-        <td style="flex-grow:10;">
-          <h5>Search</h5>
-        </td>
-        <td style="flex-grow:2.3;">
-        </td>
-        <td style="flex-grow:10;">
-          <h5>Replace</h5>
-        </td>
-        <td>
-        </td>
-      </tr>
-
-      <tr class="flex-container">
-        <td style="flex-grow:10;">
-          <input type="checkbox" name="" value="">
-          <label>File path goes here</label>
-        </td>
-        <td style="flex-grow:2;">
-          <button class="flex-container btn-no-outline">
-            <svg width="26" height="26" viewbox="0 0 16 16">
-              <use xlink:href=" img/icons.svg#search-replace-arrow" />
-            </svg>
-          </button>
-        </td>
-        <td style="flex-grow:10;">
-          <p>File path goes here</p>
-        </td>
-        <td>
-          <button class="flex-container btn-no-outline">
-            <svg width="24" height="24" viewBox="0 0 24 24">
-              <use xlink:href=" img/icons.svg#oval-question" />
-            </svg>
-          </button>
-        </td>
-      </tr>
-      <tr class="flex-container">
-        <td style="flex-grow:10;">
-          <input type="checkbox" name="" value="">
-          <label>File path goes here</label>
-        </td>
-        <td style="flex-grow:2;">
-          <svg width="26" height="26" viewbox="0 0 16 16">
-            <use xlink:href=" img/icons.svg#search-replace-arrow" />
-          </svg>
-          </button>
-        </td>
-        <td style="flex-grow:10;">
-          <p>File path goes here</p>
-        </td>
-        <td>
-          <button class="flex-container btn-no-outline">
-            <svg width="24" height="24" viewBox="0 0 24 24">
-              <use xlink:href=" img/icons.svg#oval-question" />
-            </svg>
-          </button>
-        </td>
-      </tr>
-
-
-    </table>
-
-
-
-    <br /><br />
-
-
-
-    <!--Custom Search and Replace-->
-    <table class="custom-search-replace-wrapper bg-trans">
-      <tr class="flex-container table-heading bg-trans" style="padding-bottom:1rem;">
-
-        <td style=" flex-grow:6;">
-          <h5>Search</h5>
-        </td>
-        <td style="flex-grow:2;">
-        </td>
-        <td style="flex-grow:6;">
-          <h5>Replace</h5>
-        </td>
-        <td style="flex-grow:1">
-        </td>
-      </tr>
-
-      <tr class="flex-container bg-trans">
-        <td style="flex-grow:0.5;">
-          <button class="flex-container btn-no-outline">
-            <svg width="24" height="24" viewBox="0 0 24 24">
-              <use xlink:href=" img/icons.svg#search-replace" />
-            </svg>
-          </button>
-        </td>
-        <td class="flex-container" style="flex-grow:6;">
-          <input style="flex:1;" type="text" name="" class="text-black" value="//test2.lewis.brains.us" placeholder="">
-        </td>
-        <td class="flex-container" style="flex-grow:2;">
-          <button class="flex-container align-center btn-no-outline">
-            <svg width="26" height="26" viewbox="0 0 16 16">
-              <use xlink:href=" img/icons.svg#search-replace-arrow" />
-            </svg>
-          </button>
-
-        </td>
-        <td class="flex-container" style="flex-grow:6;">
-          <input style=" flex:1;" type="text" name="" class="text-black" placeholder="New URL">
-        </td>
-        <td class="flex-container" style="flex-grow:0.5">
-          <button class="flex-container align-center btn-no-outline">
-            <svg width="24" height="24" viewBox="0 0 24 24">
-              <use xlink:href=" img/icons.svg#oval-close" />
-            </svg>
-          </button>
-
-        </td>
-      </tr>
-
-      <tr class="flex-container bg-trans">
-        <td style="flex-grow:0.5;">
-          <button class="flex-container btn-no-outline">
-            <svg width="24" height="24" viewBox="0 0 24 24">
-              <use xlink:href=" img/icons.svg#search-replace" />
-            </svg>
-          </button>
-        </td>
-        <td class="flex-container" style="flex-grow:6;">
-          <input style="flex:1;" type="text" name="" class="text-black" value="//test2.lewis.brains.us" placeholder="">
-        </td>
-        <td class="flex-container" style="flex-grow:2;">
-          <button class="flex-container align-center btn-no-outline">
-            <svg width="26" height="26" viewbox="0 0 16 16">
-              <use xlink:href=" img/icons.svg#search-replace-arrow" />
-            </svg>
-          </button>
-
-        </td>
-        <td class="flex-container" style="flex-grow:6;">
-          <input style=" flex:1;" type="text" name="" class="text-black" placeholder="New file path">
-        </td>
-        <td class="flex-container" style="flex-grow:0.5">
-          <button class="flex-container align-center btn-no-outline">
-            <svg width="24" height="24" viewBox="0 0 24 24">
-              <use xlink:href=" img/icons.svg#oval-close" />
-            </svg>
-          </button>
-
-        </td>
-      </tr>
-
-      <tr class="flex-container bg-trans">
-        <td>
-
-          <div class="flex-container" style="margin-top:0.5rem;">
-            <button class="btn btn-sm btn-stroke">
-              <div class="flex-container">
-                <div class="btn-sm-icon icon-16">
-                  <svg class="icon-16 btn-tooltip-icon">
-                    <use xlink:href="img/icons.svg#add" />
-                  </svg>
-                </div>
-                Add Row
-            </button>
-          </div>
-
-        </td>
-      </tr>
-
-    </table>
-
-
-
-    <!--COMPONENT LABEL-->
-    <p class="component-label">Containers</p>
-    <!--COMPONENT LABEL-->
-
-
-
-    <!--Standard Container-->
-    <div class="container">
-      <p>Content goes here</p>
-    </div>
-
-
-
-    <br />
-
-
-
-    <!--Table container (multi-select list)-->
-    <div class="container-table">
-      <ul class="container-table-row">
-        <li class="container-table-text">
-          <p>Content goes here</p>
+      <!--NAV-->
+      <ul class="nav bg-white flex-container">
+        <li class="nav-item nav-item-active">
+          <a href="">Profiles</a>
         </li>
-        <li class="container-table-text">
-          <p>Content goes here</p>
+        <li class="nav-item">
+          <a href="">Migrate</a>
         </li>
-        <li class="container-table-text">
-          <p>Content goes here</p>
+        <li class="nav-item">
+          <a href="">Backups</a>
         </li>
-        <li class="container-table-text">
-          <p>Content goes here</p>
+        <li class="nav-item ">
+          <a href="">Settings</a>
+        </li>
+        <li class="nav-item">
+          <a href="">Addons</a>
+        </li>
+        <li class="nav-item">
+          <a href="">Help</a>
         </li>
       </ul>
-    </div>
+
+
+      <br /><br />
 
 
 
-    <!--COMPONENT LABEL-->
-    <p class="component-label">Container Select</p>
-    <!--COMPONENT LABEL-->
+      <!--SUB NAV-->
+
+      <ul class="subnav flex-container">
+        <li class="subnav-item subnav-item-active">
+          <a href="">Email Support</a>
+        </li>
+        <li class="subnav-item">
+          <a href="">Videos</a>
+        </li>
+      </ul>
 
 
 
-    <!--Container toggle (inactive)-->
-    <div class="container-toggle">
-      <button class="btn-no-outline">
-        <div class="flex-container margin-bottom">
-          <h5>Compare & Remove</h5>
-          <!--<svg class="align-right" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+      <!--COMPONENT LABEL-->
+      <p class="component-label">Accordion States</p>
+      <!--COMPONENT LABEL-->
+
+
+
+      <!--ACCORDION COLLAPSED-->
+      <div class="accordion-wrap">
+        <div class="accordion-collapsed container-shadow bg-white flex-container">
+          <div class="accordion-label-container flex-container">
+            <input type="checkbox" class="accordion-checkbox">
+            <h2>Label</h2>
+          </div>
+
+          <div class="accordion-divider bg-grey-light"></div>
+
+          <p class="accordion-preview">
+            Accordion summary preview
+          </p>
+
+          <button class="align-right btn-no-outline">
+            <svg class="icon-16">
+              <use xlink:href="img/icons.svg#arrow" />
+            </svg>
+          </button>
+
+        </div>
+      </div>
+
+
+
+      <br />
+
+
+
+      <!--ACCORDION LOCKED-->
+      <div class="accordion-wrap">
+        <div class="accordion-locked bg-white flex-container">
+          <div class="accordion-label-container flex-container">
+            <input type="checkbox" class="accordion-checkbox" disabled>
+            <h2>Label</h2>
+          </div>
+
+          <div class="accordion-divider bg-grey-light"></div>
+
+          <svg class="accordion-icon-locked icon-16" width="24" height="24" viewBox="0 0 24 24">
+            <use xlink:href="img/icons.svg#action-locked" />
+          </svg>
+
+          <p class="accordion-preview">
+            <a href="" class="locked-accordion-link underline">Upgrade to Pro</a> to push and pull Plugin files
+          </p>
+
+        </div>
+      </div>
+
+
+
+      <br />
+
+
+
+      <!--ACCORDION EXPANDED-->
+      <div class="accordion-wrap">
+        <div class="accordion-collapsed container-shadow bg-white flex-container">
+          <div class="accordion-label-container flex-container">
+            <input type="checkbox" class="accordion-checkbox">
+            <h2>Label</h2>
+          </div>
+
+          <div class="accordion-divider bg-grey-light"></div>
+
+          <p class="accordion-preview">
+            Accordion summary preview
+          </p>
+
+          <button class="align-right btn-no-outline">
+            <svg class="icon-16">
+              <use xlink:href="img/icons.svg#arrow" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="accordion-expand container-shadow bg-white">
+
+          <div class="flex-container">
+
+            <div class="column" style="flex:1">
+              <div class="nested-accordion flex-container">
+
+                <button class="btn-no-outline">
+                  <svg class="icon-16 nested-accordion-arrow">
+                    <use xlink:href="img/icons.svg#arrow" />
+                  </svg>
+                </button>
+
+                <div class="column">
+
+                  <h4>Nested Accordion Title</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="column" style="flex:1">
+              <div class="nested-accordion flex-container">
+
+                <button class="btn-no-outline">
+                  <svg class="icon-16 nested-accordion-arrow">
+                    <use xlink:href="img/icons.svg#arrow" />
+                  </svg>
+                </button>
+
+                <div class="column">
+
+                  <h4>Nested Accordion Title</h4>
+                  <p class="nested-accordion-preview">Nested accordion summary preview</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-container">
+
+            <div class="nested-accordion flex-container">
+
+              <button class="btn-no-outline">
+                <svg class="icon-16 nested-accordion-arrow">
+                  <use xlink:href="img/icons.svg#arrow" />
+                </svg>
+              </button>
+
+              <div class="column">
+
+                <h4>Nested Accordion Title</h4>
+                <div class="flex-container">
+                  <p class="nested-accordion-preview">//test1.lewis.brains.us</p>
+
+                  <svg class="icon-16 arrow-search-replace">
+                    <use xlink:href="img/icons.svg#search-replace-arrow" />
+                  </svg>
+
+                  <p class="nested-accordion-preview">//test2.lewis.brains.us</p>
+
+                  <p class="nested-accordion-preview-divider">|</p>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="flex-container">
+
+            <div class="nested-accordion-expanded flex-container">
+
+              <button class="btn-no-outline">
+                <svg class="icon-16 nested-accordion-arrow-expanded">
+                  <use xlink:href="img/icons.svg#arrow" />
+                </svg>
+              </button>
+
+              <div class="column">
+
+                <h4 class="full-opacity text-white">Nested Accordion Title (Expanded)</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="nested-accordion-expanded-body">
+            <p>Accordion content</p>
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <!--COMPONENT LABEL-->
+      <p class="component-label">Notifications</p>
+      <!--COMPONENT LABEL-->
+
+
+
+      <!--NOTIFICATIONS-->
+
+      <!--Horizontal-->
+      <div class="notification bg-white flex-container">
+        <h3>Update Available -&nbsp;</h3>
+        <p>WP Migrate DB Pro 1.9.6 is now available. You currently have 1.9.5 installed. &nbsp;
+        </p><a href="" class="link">Update Now</a>
+      </div>
+
+
+
+      <br />
+
+
+
+      <!--Vertical (Text heavy)-->
+      <div class="notification bg-white column">
+        <div class="notification-content">
+          <h3 class="margin-bottom">Warning: Different Table Prefixes</h3>
+          <p>Whoa! We’ve detected that the database table prefix differs between installations. Running the migration will create new database tables in your remote database with prefix “wp_”.</p>
+          <p>However, your remote install is configured to use table prefix “wp_” and will ignore the migrated tables.
+            So, AFTER migration is complete, you will need to edit your remote install’s wp-config.php and change the
+            “$table_prefix” variable to “wp_”.</p>
+        </div>
+      </div>
+
+
+
+      <!--COMPONENT LABEL-->
+      <p class="component-label">Buttons</p>
+      <!--COMPONENT LABEL-->
+
+
+
+      <!--BUTTONS-->
+
+      <div class="flex-container">
+
+        <!--Primary button-->
+        <button class="btn">Label</button> &nbsp;&nbsp;
+
+        <!--Stroke button-->
+        <button class="btn btn-stroke">Label</button> &nbsp;&nbsp;
+
+        <!--Disabled button-->
+        <button class="btn btn-disabled">Label</button> &nbsp;&nbsp;
+
+        <!--Primary button (Small)-->
+        <button class="btn btn-sm">Label</button> &nbsp;&nbsp;
+
+        <!--Stroke button (Small)-->
+        <button class="btn btn-sm btn-stroke">Label</button> &nbsp;&nbsp;
+
+        <!--Disabled button (Small)-->
+        <button class="btn btn-sm btn-disabled">Label</button> &nbsp;&nbsp;
+
+        <!--Icon button (Small)-->
+        <button class="btn btn-sm btn-stroke">
+          <div class="flex-container">
+            <div class="btn-sm-icon">
+              <svg class="icon-16 btn-tooltip-icon">
+                <use xlink:href="img/icons.svg#add" />
+              </svg>
+            </div>
+            Label
+        </button> &nbsp;&nbsp;
+
+        <!--Icon button (Toolip)-->
+        <button class="btn btn-tooltip">
+          <div class="flex-container">
+            <div>
+
+              <svg class="icon-16 btn-tooltip-icon">
+                <use xlink:href="img/icons.svg#check-white" />
+              </svg>
+
+            </div>
+            Save
+        </button>
+
+        <!--Icon button (Toolip outline)-->
+        <button class="btn-tooltip-stroke">Cancel</button>
+
+      </div>
+
+
+
+      <!--COMPONENT LABEL-->
+      <p class="component-label">Action Controls</p>
+      <!--COMPONENT LABEL-->
+
+
+
+      <!--Default Action-->
+      <div class="flex-container">
+        <button class="flex-container action-icon btn-no-outline">
+          <p class="action-title text-center">Action Title</p>
+          <svg class="icon-24">
+            <use xlink:href="img/icons.svg#action-backup-database" />
+          </svg>
+        </button>
+
+        <!--Locked Action-->
+        <button class="flex-container action-icon btn-no-outline">
+          <p class="action-title-locked text-center">Action Title</p>
+          <svg class="icon-24">
+            <use xlink:href="img/icons.svg#action-locked" />
+          </svg>
+        </button>
+      </div>
+
+
+
+      <!--COMPONENT LABEL-->
+      <p class="component-label">Checkbox / Radio Button / Toggle Switch</p>
+      <!--COMPONENT LABEL-->
+
+
+
+      <!--Checkbox-->
+      <ul>
+        <li>
+          <input type="checkbox" class="default-checkbox" name="" value="">
+          <label>Checkbox label</label>
+        </li>
+      </ul>
+
+
+
+      <!--Radio Button-->
+      <ul>
+        <li>
+          <input type="radio" name="name" value="">
+          <label>Radio button label</label>
+        </li>
+      </ul>
+
+
+
+      <br />
+
+
+
+      <!--Toggle-->
+      <div class="switch_box box_1">
+        <input type="checkbox" class="switch_1">
+      </div>
+
+
+
+      <br />
+
+
+
+      <!--Slider Switch-->
+      <div class="slider-switch-bg">
+        <div class="slider-switch-active">
+          <div style="margin-left:4rem;" class="slider-switch">
+          </div>
+        </div>
+      </div>
+
+
+
+      <!--COMPONENT LABEL-->
+      <p class="component-label">Textboxes</p>
+      <!--COMPONENT LABEL-->
+
+
+
+      <!--Textboxes-->
+      <input type="text" name="" class="text-black" placeholder="Placeholder text...">
+
+      <br /><br />
+
+      <input type="text" name="" class="text-black" placeholder="Readonly Placeholder text..." readonly>
+
+      <br /><br />
+
+      <textarea rows="3" name="" class="text-black" placeholder="Placeholder text..."></textarea>
+
+
+
+      <!--COMPONENT LABEL-->
+      <p class="component-label">Dropdown</p>
+      <!--COMPONENT LABEL-->
+
+
+
+      <!--Dropdown-->
+      <select>
+        <option value="">store.test1.lewis.brains.us</option>
+        <option value="">store.test2.lewis.brains.us</option>
+        <option value="">store.test3.lewis.brains.us</option>
+      </select>
+
+
+
+      <!--COMPONENT LABEL-->
+      <p class="component-label">Tooltip Overlays</p>
+      <!--COMPONENT LABEL-->
+
+
+
+      <!--Speech bubble (arrow left)-->
+      <div class="flex-container">
+        <div class="speech-shadow">
+          <div class="speech-bubble-left">
+            <p>Text goes here</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <br />
+
+
+
+      <!--Speech bubble (arrow top)-->
+      <div class="flex-container">
+        <div class="speech-shadow">
+          <div class="speech-bubble-top">
+            <p>Text goes here</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <br />
+
+
+
+      <!--Speech bubble (button tooltip)-->
+      <div class="flex-container">
+        <div class="speech-shadow">
+          <div class="speech-bubble-left">
+            <p class="margin-bottom">Are you sure?</p>
+
+            <!--Icon button (Toolip)-->
+            <div class="flex-container">
+              <button class="btn btn-tooltip">
+                <div class="flex-container">
+                  <div>
+                    <svg class="icon-16 btn-tooltip-icon">
+                      <use xlink:href="img/icons.svg#check-white" />
+                    </svg>
+
+                  </div>
+                  Save
+              </button>
+
+              <!--Icon button (Toolip outline)-->
+              <button class="btn-tooltip-stroke">
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <br />
+
+
+
+      <!--Saved tooltip-->
+      <div class="flex-container">
+        <div class="tooltip-saved flex-container">
+          <svg class="icon-24 tooltip-saved-icon">
+            <use xlink:href="img/icons.svg#check-circular" />
+          </svg>
+          <p>Saved</p>
+        </div>
+      </div>
+
+
+
+      <!--COMPONENT LABEL-->
+      <p class="component-label">Search and Replace</p>
+      <!--COMPONENT LABEL-->
+
+
+
+      <!--Search and Replace-->
+      <table>
+        <tr class="flex-container table-heading bg-trans">
+          <td style="flex-grow:10;">
+            <h5>Search</h5>
+          </td>
+          <td style="flex-grow:2.3;">
+          </td>
+          <td style="flex-grow:10;">
+            <h5>Replace</h5>
+          </td>
+          <td>
+          </td>
+        </tr>
+
+        <tr class="flex-container">
+          <td style="flex-grow:10;">
+            <input type="checkbox" name="" value="">
+            <label>File path goes here</label>
+          </td>
+          <td style="flex-grow:2;">
+            <button class="flex-container btn-no-outline">
+              <svg width="26" height="26" viewbox="0 0 16 16">
+                <use xlink:href=" img/icons.svg#search-replace-arrow" />
+              </svg>
+            </button>
+          </td>
+          <td style="flex-grow:10;">
+            <p>File path goes here</p>
+          </td>
+          <td>
+            <button class="flex-container btn-no-outline">
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <use xlink:href=" img/icons.svg#oval-question" />
+              </svg>
+            </button>
+          </td>
+        </tr>
+        <tr class="flex-container">
+          <td style="flex-grow:10;">
+            <input type="checkbox" name="" value="">
+            <label>File path goes here</label>
+          </td>
+          <td style="flex-grow:2;">
+            <svg width="26" height="26" viewbox="0 0 16 16">
+              <use xlink:href=" img/icons.svg#search-replace-arrow" />
+            </svg>
+            </button>
+          </td>
+          <td style="flex-grow:10;">
+            <p>File path goes here</p>
+          </td>
+          <td>
+            <button class="flex-container btn-no-outline">
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <use xlink:href=" img/icons.svg#oval-question" />
+              </svg>
+            </button>
+          </td>
+        </tr>
+
+
+      </table>
+
+
+
+      <br /><br />
+
+
+
+      <!--Custom Search and Replace-->
+      <table class="custom-search-replace-wrapper bg-trans">
+        <tr class="flex-container table-heading bg-trans" style="padding-bottom:1rem;">
+
+          <td style=" flex-grow:6;">
+            <h5>Search</h5>
+          </td>
+          <td style="flex-grow:2;">
+          </td>
+          <td style="flex-grow:6;">
+            <h5>Replace</h5>
+          </td>
+          <td style="flex-grow:1">
+          </td>
+        </tr>
+
+        <tr class="flex-container bg-trans">
+          <td style="flex-grow:0.5;">
+            <button class="flex-container btn-no-outline">
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <use xlink:href=" img/icons.svg#search-replace" />
+              </svg>
+            </button>
+          </td>
+          <td class="flex-container" style="flex-grow:6;">
+            <input style="flex:1;" type="text" name="" class="text-black" value="//test2.lewis.brains.us" placeholder="">
+          </td>
+          <td class="flex-container" style="flex-grow:2;">
+            <button class="flex-container align-center btn-no-outline">
+              <svg width="26" height="26" viewbox="0 0 16 16">
+                <use xlink:href=" img/icons.svg#search-replace-arrow" />
+              </svg>
+            </button>
+
+          </td>
+          <td class="flex-container" style="flex-grow:6;">
+            <input style=" flex:1;" type="text" name="" class="text-black" placeholder="New URL">
+          </td>
+          <td class="flex-container" style="flex-grow:0.5">
+            <button class="flex-container align-center btn-no-outline">
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <use xlink:href=" img/icons.svg#oval-close" />
+              </svg>
+            </button>
+
+          </td>
+        </tr>
+
+        <tr class="flex-container bg-trans">
+          <td style="flex-grow:0.5;">
+            <button class="flex-container btn-no-outline">
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <use xlink:href=" img/icons.svg#search-replace" />
+              </svg>
+            </button>
+          </td>
+          <td class="flex-container" style="flex-grow:6;">
+            <input style="flex:1;" type="text" name="" class="text-black" value="//test2.lewis.brains.us" placeholder="">
+          </td>
+          <td class="flex-container" style="flex-grow:2;">
+            <button class="flex-container align-center btn-no-outline">
+              <svg width="26" height="26" viewbox="0 0 16 16">
+                <use xlink:href=" img/icons.svg#search-replace-arrow" />
+              </svg>
+            </button>
+
+          </td>
+          <td class="flex-container" style="flex-grow:6;">
+            <input style=" flex:1;" type="text" name="" class="text-black" placeholder="New file path">
+          </td>
+          <td class="flex-container" style="flex-grow:0.5">
+            <button class="flex-container align-center btn-no-outline">
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <use xlink:href=" img/icons.svg#oval-close" />
+              </svg>
+            </button>
+
+          </td>
+        </tr>
+
+        <tr class="flex-container bg-trans">
+          <td>
+
+            <div class="flex-container" style="margin-top:0.5rem;">
+              <button class="btn btn-sm btn-stroke">
+                <div class="flex-container">
+                  <div class="btn-sm-icon icon-16">
+                    <svg class="icon-16 btn-tooltip-icon">
+                      <use xlink:href="img/icons.svg#add" />
+                    </svg>
+                  </div>
+                  Add Row
+              </button>
+            </div>
+
+          </td>
+        </tr>
+
+      </table>
+
+
+
+      <!--COMPONENT LABEL-->
+      <p class="component-label">Containers</p>
+      <!--COMPONENT LABEL-->
+
+
+
+      <!--Standard Container-->
+      <div class="container">
+        <p>Content goes here</p>
+      </div>
+
+
+
+      <br />
+
+
+
+      <!--Table container (multi-select list)-->
+      <div class="container-table">
+        <ul class="container-table-row">
+          <li class="container-table-text">
+            <p>Content goes here</p>
+          </li>
+          <li class="container-table-text">
+            <p>Content goes here</p>
+          </li>
+          <li class="container-table-text">
+            <p>Content goes here</p>
+          </li>
+          <li class="container-table-text">
+            <p>Content goes here</p>
+          </li>
+        </ul>
+      </div>
+
+
+
+      <!--COMPONENT LABEL-->
+      <p class="component-label">Container Select</p>
+      <!--COMPONENT LABEL-->
+
+
+
+      <!--Container toggle (inactive)-->
+      <div class="container-toggle">
+        <button class="btn-no-outline">
+          <div class="flex-container margin-bottom">
+            <h5>Compare & Remove</h5>
+            <!--<svg class="align-right" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
           <g fill="none" fill-rule="evenodd" transform="translate(3 3)">
             <circle cx="9" cy="9" fill="#0777ef" r="9" />
             <path d="m5 9.5 3.2 2.5 4.8-6" stroke="#fff" stroke-width="2" />
           </g>
         </svg>-->
-        </div>
-        <p>Migrate new/updated files and clean options</p>
-      </button>
-    </div>
-
-
-
-    <br />
-
-
-
-    <!--Container toggle (active)-->
-    <div class="container-toggle container-toggle-active">
-      <button class="btn-no-outline">
-        <div class="flex-container margin-bottom">
-          <h5>Compare & Remove</h5>
-          <svg class="icon-24 align-right">
-            <use xlink:href="img/icons.svg#check-circular" />
-          </svg>
-        </div>
-        <p>Migrate new/updated files and clean options</p>
-      </button>
-    </div>
-
-
-
-    <!--COMPONENT LABEL-->
-    <p class="component-label">Migration Modal States</p>
-    <!--COMPONENT LABEL-->
-
-
-
-    <!--Migration In Progress Container-->
-    <div class="migration-progress modal">
-      <div class="flex-container">
-
-        <h1 class="migration-title">
-          Push <span class="regular">to </span>test1.lewisbrains.us
-        </h1>
-
-        <p class="migration-timer align-right">00:00:13</p>
-
-      </div>
-
-      <div class="flex-container">
-        <div class="migration-progress-content">
-
-          <div class="flex-container flex-align-baseline">
-            <p class="migration-percentage">87%</p>
-            <p class="migration-data-transferred semibold">(1.76 MB / 2.02 MB)</p>
           </div>
-
-          <div class="migration-progress-bar bg-grey-light">
-            <div style="width:30%" class="migration-progress-bar bg-primary"></div>
-          </div>
-
-          <ul class="flex-container">
-
-            <li class="migration-progress-steps">
-              <svg class="icon-16">
-                <use xlink:href="img/icons.svg#progress-section-check" />
-              </svg>
-              Tables
-            </li>
-
-            <li class="migration-progress-steps">
-              <svg class="icon-16">
-                <use xlink:href="img/icons.svg#progress-section-check" />
-              </svg>
-              Media
-            </li>
-
-            <li class="migration-progress-steps">
-              <svg class="icon-16">
-                <use xlink:href="img/icons.svg#progress-section-check" />
-              </svg>
-              Themes
-            </li>
-
-        </div>
-      </div>
-
-      <div class="flex-container migration-progress-controls">
-
-        <!--Stroke button (Small)-->
-        <button class="btn btn-sm btn-stroke migration-progress-btn">PAUSE</button>
-        <!--Stroke button (Small)-->
-        <button class="btn btn-sm btn-stroke migration-progress-btn">CANCEL</button>
-
-        <div class="align-right">
-          <input type="checkbox" name="" value="" checked>
-          <label>Pause before replacing migrated tables</label>
-        </div>
-      </div>
-    </div>
-
-
-
-    <br /><br />
-
-
-
-    <!--Free version advert-->
-    <div class="flex-container migration-free-advert modal wrap">
-      <div class="column" style="flex:1; min-width:18rem;">
-        <h1 class="migration-title"><span class="regular">Got the</span> PRO <span class="regular">version yet?</span>
-        </h1>
-
-        <ul>
-          <li class="flex-container">
-            <svg class="icon-24 migration-free-advert-icon">
-              <use xlink:href="img/icons.svg#check-circular" />
-            </svg>
-
-            <p>Push and pull the database</p>
-          </li>
-          <li class="flex-container">
-            <svg class="icon-24 migration-free-advert-icon">
-              <use xlink:href="img/icons.svg#check-circular" />
-            </svg>
-
-            <p>Sync the media libraries of two sites</p>
-          </li>
-          <li class="flex-container">
-            <svg class="icon-24 migration-free-advert-icon">
-              <use xlink:href="img/icons.svg#check-circular" />
-            </svg>
-
-            <p>Run push/pull migrations from the command line</p>
-          </li>
-          <li class="flex-container">
-            <svg class="icon-24 migration-free-advert-icon">
-              <use xlink:href="img/icons.svg#check-circular" />
-            </svg>
-
-            <p>Migrate from multisite to single site and back again</p>
-          </li>
-          <li class="flex-container">
-            <svg class="icon-24 migration-free-advert-icon">
-              <use xlink:href="img/icons.svg#check-circular" />
-            </svg>
-
-            <p>Select which tables to migrate</p>
-          </li>
-          <li class="flex-container">
-            <svg class="icon-24 migration-free-advert-icon">
-              <use xlink:href="img/icons.svg#check-circular" />
-            </svg>
-
-            <p>Exclude post types</p>
-          </li>
-          <li class="flex-container">
-            <svg class="icon-24 migration-free-advert-icon">
-              <use xlink:href="img/icons.svg#check-circular" />
-            </svg>
-
-            <p>Priority email support</p>
-          </li>
-          <button class="btn migration-free-advert-btn">Find out more</button>
-        </ul>
-
-      </div>
-
-      <div class="column align-right " style="margin-bottom:auto; flex:1">
-
-        <iframe allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/8u_kX5d78Bs?ecver=1&amp;iv_load_policy=1&amp;yt:stretch=16:9&amp;autohide=1&amp;color=red&amp;width=560&amp;width=560" width="480" height="270"
-          allowtransparency="true" frameborder="0">
-          <script>
-            function execute_YTvideo() {
-              return youtube.query({
-                ids: "channel==MINE",
-                startDate: "2019-01-01",
-                endDate: "2019-12-31",
-                metrics: "views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,subscribersGained",
-                dimensions: "day",
-                sort: "day"
-              }).then(function(e) {}, function(e) {
-                console.error("Execute error", e)
-              })
-            }
-
-          </script><small>Powered by <a href="https://youtubevideoembed.com/">Embed YouTube Video</a></small>
-        </iframe>
-
-        <div class="flex-container tweet-testimonial">
-          <div class="column">
-            <img class="avatar" src="./img/testimonial-avatar.png">
-          </div>
-
-          <div class="column">
-            <div class="flex-container" style="flex-grow:1; align-items: center;">
-              <h4 class="text-white full-opacity">MortenRandHendriksen</h4>
-              <p class="twitter-handle text-white">@mor10</p>
-
-              <div class="align-right">
-                <svg class="icon-16">
-                  <use xlink:href="img/icons.svg#rating-star-active" />
-                </svg>
-                <svg class="icon-16">
-                  <use xlink:href="img/icons.svg#rating-star-active" />
-                </svg>
-                <svg class="icon-16">
-                  <use xlink:href="img/icons.svg#rating-star-active" />
-                </svg>
-                <svg class="icon-16">
-                  <use xlink:href="img/icons.svg#rating-star-active" />
-                </svg>
-                <svg class="icon-16">
-                  <use xlink:href="img/icons.svg#rating-star-active" />
-                </svg>
-              </div>
-            </div>
-
-            <div class="flex-container">
-              <p class="tweet-testimonial-text text-white">“Even though I've been using it for a long time the push/pull functionality in @dliciousbrains WP Migrate DB Pro continues to impress me.”</p>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-    <br /><br />
-
-
-
-    <!--Migration Complete Container-->
-    <div class="migration-complete modal">
-
-      <div class="column flex-container">
-        <button class="popup-close align-right btn-no-outline">
-          <svg class="icon-16">
-            <use xlink:href="img/icons.svg#close" />
-          </svg>
+          <p>Migrate new/updated files and clean options</p>
         </button>
-
-        <h1 class="migration-title">
-          Push <span class="regular">to </span>test1.lewisbrains.us
-        </h1>
-
-        <!--Placeholder icon (This will be an SVG animation)-->
-        <svg width="86" height="86" viewBox="0 0 24 24">
-          <use xlink:href="img/icons.svg#check-circular" />
-        </svg>
-
-        <p class="migration-complete-summary"><span class="text-primary semibold">
-            6.57 MB </span>of data was migrated in <span class="text-primary semibold">58 seconds</span>
-        </p>
-
       </div>
 
-      <div class="flex-container pos-relative">
-        <button class="btn btn-sm migration-complete-close-btn">Close</button>
 
-        <a href="https://twitter.com/dliciousbrains" title="@dliciousbrains twitter link">
-          <svg class="icon-24 twitter">
-            <use xlink:href="img/icons.svg#twitter" />
-          </svg>
-        </a>
 
-      </div>
-    </div>
+      <br />
 
 
 
-    <br /><br />
-
-
-
-    <!--Review Prompt Container-->
-    <div class="migration-complete modal">
-      <div class="column flex-container">
-
-        <button class="popup-close align-right btn-no-outline">
-          <svg class="icon-16">
-            <use xlink:href="img/icons.svg#close" />
-          </svg>
+      <!--Container toggle (active)-->
+      <div class="container-toggle container-toggle-active">
+        <button class="btn-no-outline">
+          <div class="flex-container margin-bottom">
+            <h5>Compare & Remove</h5>
+            <svg class="icon-24 align-right">
+              <use xlink:href="img/icons.svg#check-circular" />
+            </svg>
+          </div>
+          <p>Migrate new/updated files and clean options</p>
         </button>
-
-        <h1 class="migration-title">
-          Push <span class="regular">to </span>test1.lewisbrains.us
-        </h1>
-
-        <!--Placeholder icon (This will be an SVG animation)-->
-        <svg width="86" height="86" viewBox="0 0 24 24">
-          <use xlink:href="img/icons.svg#check-circular" />
-        </svg>
-
-        <p class="migration-complete-summary"><span class="text-primary semibold">
-            6.57 MB </span>of data was migrated in <span class="text-primary semibold">58 seconds</span>
-        </p>
-
-        <div class="review-container flex-container">
-          <h2 class="semibold text-primary">Help support WP Migrate DB, review it on WP.org...</h2>
-          <div class="review-stars">
-            <svg class="icon-16">
-              <use xlink:href="img/icons.svg#rating-star-inactive" />
-            </svg>
-            <svg class="icon-16">
-              <use xlink:href="img/icons.svg#rating-star-inactive" />
-            </svg>
-            <svg class="icon-16">
-              <use xlink:href="img/icons.svg#rating-star-inactive" />
-            </svg>
-            <svg class="icon-16">
-              <use xlink:href="img/icons.svg#rating-star-inactive" />
-            </svg>
-            <svg class="icon-16">
-              <use xlink:href="img/icons.svg#rating-star-inactive" />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-    <!--COMPONENT LABEL-->
-    <p class="component-label">Tables</p>
-    <!--COMPONENT LABEL-->
-
-
-
-    <!--Table-->
-    <div class="container-shadow table">
-      <div class="flex-container">
-        <h2 class="table-heading">Saved Backups</h2>
-      </div>
-
-      <div class="table-divider-line bg-grey-light"></div>
-
-      <table>
-
-        <tr class="flex-container">
-          <td class="table-col-date">
-            <p>Jul 23 12:34pm</p>
-          </td>
-
-          <td class="table-col-item">
-            <p>Backup before overwriting database with pull from tesla.com</p>
-          </td>
-
-          <td class="table-col-action">
-            <a href="" class="link">Restore</a>
-          </td>
-
-          <td class="table-col-action">
-            <a href="" class="link">Download</a>
-          </td>
-
-          <td>
-            <a href="" class="link text-error">Delete</a>
-          </td>
-        </tr>
-
-        <tr class="flex-container">
-          <td class="table-col-date">
-            <p>Jul 23 12:34pm</p>
-          </td>
-
-          <td class="table-col-item">
-            <p>Backup before overwriting database with pull from tesla.com</p>
-          </td>
-
-          <td class="table-col-action">
-            <a href="" class="link">Restore</a>
-          </td>
-
-          <td class="table-col-action">
-            <a href="" class="link">Download</a>
-          </td>
-
-          <td>
-            <a href="" class="link text-error">Delete</a>
-          </td>
-        </tr>
-
-      </table>
-    </div>
-
-
-
-    <!--COMPONENT LABEL-->
-    <p class="component-label">Miscellaneous</p>
-    <!--COMPONENT LABEL-->
-
-
-
-    <!--Addon container (Install button)-->
-    <div class="flex-container">
-
-      <div class="addon-container container-shadow flex-container column">
-        <svg class="icon-64">
-          <use xlink:href="img/icons.svg#addons-mediafiles" />
-        </svg>
-
-        <div class="addon-content flex-container column">
-
-          <h5 class="addon-title">Media Files</h5>
-          <p>Allows you to push and pull your files in the Media Library between two WordPress installs. <a href="" class="link">More Details →</a></p>
-
-        </div>
-
-        <div class="addon-bottom-controls flex-container column">
-
-          <button class="btn btn-sm addon-btn">Install</button>
-          <a href="" class="link addon-link">Download</a>
-        </div>
       </div>
 
 
-      <!--Addon container (Installed and activated status)-->
-      <div class="addon-container container-shadow flex-container column">
-        <svg class="icon-64">
-          <use xlink:href="img/icons.svg#addons-multisitetools" />
-        </svg>
 
-        <div class="addon-content flex-container column">
-
-          <h5 class="addon-title">Multisite Tools</h5>
-          <p>Export a subsite as an SQL file that can then be imported as a single site install. <a href="" class="link">More Details →</a></p>
-
-        </div>
-
-        <div class="addon-bottom-controls flex-container column">
-
-          <div class="flex-container installed-activated-icon">
-
-            <svg class="icon-24">
-              <use xlink:href="img/icons.svg#license-checked" />
-            </svg>
-
-            <p class="installed-activated-text bold">Installed & Activated</p>
-          </div>
-
-          <a href="" class="link addon-link">Download</a>
-        </div>
-      </div>
-    </div>
+      <!--COMPONENT LABEL-->
+      <p class="component-label">Migration Modal States</p>
+      <!--COMPONENT LABEL-->
 
 
 
-    <br /><br />
-
-
-
-    <!--Video select container-->
-    <div class="video-container container-shadow flex-container">
-      <div class="column">
-        <svg class="icon-32 video-container-icon">
-          <use xlink:href="img/icons.svg#video" />
-        </svg>
-      </div>
-
-      <div class="column">
-        <h3>UI Walkthrough</h3>
-        <p>A brief walkthrough of the WP Migrate DB plugin showing all of the different options and explaining them.</p>
-      </div>
-    </div>
-
-
-
-    <br /><br />
-
-
-
-    <!--Sidebar (free version)-->
-    <div class="sidebar container-shadow">
-      <svg width="256" height="250" viewBox="0 0 256 250">
-        <use xlink:href="img/icons.svg#sidebar-graphic" />
-      </svg>
-
-      <div class="column sidebar-content">
-        <h3 class="text-primary">Get <span class="bold">20%</span> off</h3>
-
-        <p class="coupon-text">Submit your name and email and we’ll send you a coupon for 20% off your upgrade to the pro version.</p>
-
-        <input class="sidebar-input-text" type="" name="Email" value=" lewis@deliciousbrains.com" placeholder="">
-
-        <input class="sidebar-input-text" type="" name="Name" placeholder="Placeholder text...">
-
-        <button class="btn sidebar-btn">Send me the coupon</button>
-
-        <p class="sidebar-smalltext">We will not use your email for anything else and you can unsubscribe with 1-click anytime!</p>
-      </div>
-
-      <div class="sidebar-tweet-testimonial">
+      <!--Migration In Progress Container-->
+      <div class="migration-progress modal">
         <div class="flex-container">
 
-          <h2 class="text-white full-opacity">@BoxyStudio</h2>
+          <h1 class="migration-title">
+            Push <span class="regular">to </span>test1.lewisbrains.us
+          </h1>
 
-          <div class="align-right">
-            <svg class="icon-16">
-              <use xlink:href="img/icons.svg#rating-star-active" />
-            </svg>
-            <svg class="icon-16">
-              <use xlink:href="img/icons.svg#rating-star-active" />
-            </svg>
-            <svg class="icon-16">
-              <use xlink:href="img/icons.svg#rating-star-active" />
-            </svg>
-            <svg class="icon-16">
-              <use xlink:href="img/icons.svg#rating-star-active" />
-            </svg>
-            <svg class="icon-16">
-              <use xlink:href="img/icons.svg#rating-star-active" />
-            </svg>
+          <p class="migration-timer align-right">00:00:13</p>
+
+        </div>
+
+        <div class="flex-container">
+          <div class="migration-progress-content">
+
+            <div class="flex-container flex-align-baseline">
+              <p class="migration-percentage">87%</p>
+              <p class="migration-data-transferred semibold">(1.76 MB / 2.02 MB)</p>
+            </div>
+
+            <div class="migration-progress-bar bg-grey-light">
+              <div style="width:30%" class="migration-progress-bar bg-primary"></div>
+            </div>
+
+            <ul class="flex-container">
+
+              <li class="migration-progress-steps">
+                <svg class="icon-16">
+                  <use xlink:href="img/icons.svg#progress-section-check" />
+                </svg>
+                Tables
+              </li>
+
+              <li class="migration-progress-steps">
+                <svg class="icon-16">
+                  <use xlink:href="img/icons.svg#progress-section-check" />
+                </svg>
+                Media
+              </li>
+
+              <li class="migration-progress-steps">
+                <svg class="icon-16">
+                  <use xlink:href="img/icons.svg#progress-section-check" />
+                </svg>
+                Themes
+              </li>
+
           </div>
         </div>
 
-        <p class="sidebar-tweet-text text-white">“Wow. WP Migrate DB Pro has made our local/live development a breeze. What a brilliant plugin. Worth every penny!</p>
+        <div class="flex-container migration-progress-controls">
 
+          <!--Stroke button (Small)-->
+          <button class="btn btn-sm btn-stroke migration-progress-btn">PAUSE</button>
+          <!--Stroke button (Small)-->
+          <button class="btn btn-sm btn-stroke migration-progress-btn">CANCEL</button>
+
+          <div class="align-right">
+            <input type="checkbox" name="" value="" checked>
+            <label>Pause before replacing migrated tables</label>
+          </div>
+        </div>
+      </div>
+
+
+
+      <br /><br />
+
+
+
+      <!--Free version advert-->
+      <div class="flex-container migration-free-advert modal wrap">
+        <div class="column" style="flex:1; min-width:18rem;">
+          <h1 class="migration-title"><span class="regular">Got the</span> PRO <span class="regular">version yet?</span>
+          </h1>
+
+          <ul>
+            <li class="flex-container">
+              <svg class="icon-24 migration-free-advert-icon">
+                <use xlink:href="img/icons.svg#check-circular" />
+              </svg>
+
+              <p>Push and pull the database</p>
+            </li>
+            <li class="flex-container">
+              <svg class="icon-24 migration-free-advert-icon">
+                <use xlink:href="img/icons.svg#check-circular" />
+              </svg>
+
+              <p>Sync the media libraries of two sites</p>
+            </li>
+            <li class="flex-container">
+              <svg class="icon-24 migration-free-advert-icon">
+                <use xlink:href="img/icons.svg#check-circular" />
+              </svg>
+
+              <p>Run push/pull migrations from the command line</p>
+            </li>
+            <li class="flex-container">
+              <svg class="icon-24 migration-free-advert-icon">
+                <use xlink:href="img/icons.svg#check-circular" />
+              </svg>
+
+              <p>Migrate from multisite to single site and back again</p>
+            </li>
+            <li class="flex-container">
+              <svg class="icon-24 migration-free-advert-icon">
+                <use xlink:href="img/icons.svg#check-circular" />
+              </svg>
+
+              <p>Select which tables to migrate</p>
+            </li>
+            <li class="flex-container">
+              <svg class="icon-24 migration-free-advert-icon">
+                <use xlink:href="img/icons.svg#check-circular" />
+              </svg>
+
+              <p>Exclude post types</p>
+            </li>
+            <li class="flex-container">
+              <svg class="icon-24 migration-free-advert-icon">
+                <use xlink:href="img/icons.svg#check-circular" />
+              </svg>
+
+              <p>Priority email support</p>
+            </li>
+            <button class="btn migration-free-advert-btn">Find out more</button>
+          </ul>
+
+        </div>
+
+        <div class="column align-right " style="margin-bottom:auto; flex:1">
+
+          <iframe allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/8u_kX5d78Bs?ecver=1&amp;iv_load_policy=1&amp;yt:stretch=16:9&amp;autohide=1&amp;color=red&amp;width=560&amp;width=560" width="480" height="270"
+            allowtransparency="true" frameborder="0">
+            <script>
+              function execute_YTvideo() {
+                return youtube.query({
+                  ids: "channel==MINE",
+                  startDate: "2019-01-01",
+                  endDate: "2019-12-31",
+                  metrics: "views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,subscribersGained",
+                  dimensions: "day",
+                  sort: "day"
+                }).then(function(e) {}, function(e) {
+                  console.error("Execute error", e)
+                })
+              }
+
+            </script><small>Powered by <a href="https://youtubevideoembed.com/">Embed YouTube Video</a></small>
+          </iframe>
+
+          <div class="flex-container tweet-testimonial">
+            <div class="column">
+              <img class="avatar" src="./img/testimonial-avatar.png">
+            </div>
+
+            <div class="column">
+              <div class="flex-container" style="flex-grow:1; align-items: center;">
+                <h4 class="text-white full-opacity">MortenRandHendriksen</h4>
+                <p class="twitter-handle text-white">@mor10</p>
+
+                <div class="align-right">
+                  <svg class="icon-16">
+                    <use xlink:href="img/icons.svg#rating-star-active" />
+                  </svg>
+                  <svg class="icon-16">
+                    <use xlink:href="img/icons.svg#rating-star-active" />
+                  </svg>
+                  <svg class="icon-16">
+                    <use xlink:href="img/icons.svg#rating-star-active" />
+                  </svg>
+                  <svg class="icon-16">
+                    <use xlink:href="img/icons.svg#rating-star-active" />
+                  </svg>
+                  <svg class="icon-16">
+                    <use xlink:href="img/icons.svg#rating-star-active" />
+                  </svg>
+                </div>
+              </div>
+
+              <div class="flex-container">
+                <p class="tweet-testimonial-text text-white">“Even though I've been using it for a long time the push/pull functionality in @dliciousbrains WP Migrate DB Pro continues to impress me.”</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <br /><br />
+
+
+
+      <!--Migration Complete Container-->
+      <div class="migration-complete modal">
+
+        <div class="column flex-container">
+          <button class="popup-close align-right btn-no-outline">
+            <svg class="icon-16">
+              <use xlink:href="img/icons.svg#close" />
+            </svg>
+          </button>
+
+          <h1 class="migration-title">
+            Push <span class="regular">to </span>test1.lewisbrains.us
+          </h1>
+
+          <!--Placeholder icon (This will be an SVG animation)-->
+          <svg width="86" height="86" viewBox="0 0 24 24">
+            <use xlink:href="img/icons.svg#check-circular" />
+          </svg>
+
+          <p class="migration-complete-summary"><span class="text-primary semibold">
+              6.57 MB </span>of data was migrated in <span class="text-primary semibold">58 seconds</span>
+          </p>
+
+        </div>
+
+        <div class="flex-container pos-relative">
+          <button class="btn btn-sm migration-complete-close-btn">Close</button>
+
+          <a href="https://twitter.com/dliciousbrains" title="@dliciousbrains twitter link">
+            <svg class="icon-24 twitter">
+              <use xlink:href="img/icons.svg#twitter" />
+            </svg>
+          </a>
+
+        </div>
+      </div>
+
+
+
+      <br /><br />
+
+
+
+      <!--Review Prompt Container-->
+      <div class="migration-complete modal">
+        <div class="column flex-container">
+
+          <button class="popup-close align-right btn-no-outline">
+            <svg class="icon-16">
+              <use xlink:href="img/icons.svg#close" />
+            </svg>
+          </button>
+
+          <h1 class="migration-title">
+            Push <span class="regular">to </span>test1.lewisbrains.us
+          </h1>
+
+          <!--Placeholder icon (This will be an SVG animation)-->
+          <svg width="86" height="86" viewBox="0 0 24 24">
+            <use xlink:href="img/icons.svg#check-circular" />
+          </svg>
+
+          <p class="migration-complete-summary"><span class="text-primary semibold">
+              6.57 MB </span>of data was migrated in <span class="text-primary semibold">58 seconds</span>
+          </p>
+
+          <div class="review-container flex-container">
+            <h2 class="semibold text-primary">Help support WP Migrate DB, review it on WP.org...</h2>
+            <div class="review-stars">
+              <svg class="icon-16">
+                <use xlink:href="img/icons.svg#rating-star-inactive" />
+              </svg>
+              <svg class="icon-16">
+                <use xlink:href="img/icons.svg#rating-star-inactive" />
+              </svg>
+              <svg class="icon-16">
+                <use xlink:href="img/icons.svg#rating-star-inactive" />
+              </svg>
+              <svg class="icon-16">
+                <use xlink:href="img/icons.svg#rating-star-inactive" />
+              </svg>
+              <svg class="icon-16">
+                <use xlink:href="img/icons.svg#rating-star-inactive" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!--COMPONENT LABEL-->
+      <p class="component-label">Tables</p>
+      <!--COMPONENT LABEL-->
+
+
+
+      <!--Table-->
+      <div class="container-shadow table">
+        <div class="flex-container">
+          <h2 class="table-heading">Saved Backups</h2>
+        </div>
+
+        <div class="table-divider-line bg-grey-light"></div>
+
+        <table>
+
+          <tr class="flex-container">
+            <td class="table-col-date">
+              <p>Jul 23 12:34pm</p>
+            </td>
+
+            <td class="table-col-item">
+              <p>Backup before overwriting database with pull from tesla.com</p>
+            </td>
+
+            <td class="table-col-action">
+              <a href="" class="link">Restore</a>
+            </td>
+
+            <td class="table-col-action">
+              <a href="" class="link">Download</a>
+            </td>
+
+            <td>
+              <a href="" class="link text-error">Delete</a>
+            </td>
+          </tr>
+
+          <tr class="flex-container">
+            <td class="table-col-date">
+              <p>Jul 23 12:34pm</p>
+            </td>
+
+            <td class="table-col-item">
+              <p>Backup before overwriting database with pull from tesla.com</p>
+            </td>
+
+            <td class="table-col-action">
+              <a href="" class="link">Restore</a>
+            </td>
+
+            <td class="table-col-action">
+              <a href="" class="link">Download</a>
+            </td>
+
+            <td>
+              <a href="" class="link text-error">Delete</a>
+            </td>
+          </tr>
+
+        </table>
+      </div>
+
+
+
+      <!--COMPONENT LABEL-->
+      <p class="component-label">Miscellaneous</p>
+      <!--COMPONENT LABEL-->
+
+
+
+      <!--Addon container (Install button)-->
+      <div class="flex-container">
+
+        <div class="addon-container container-shadow flex-container column">
+          <svg class="icon-64">
+            <use xlink:href="img/icons.svg#addons-mediafiles" />
+          </svg>
+
+          <div class="addon-content flex-container column">
+
+            <h5 class="addon-title">Media Files</h5>
+            <p>Allows you to push and pull your files in the Media Library between two WordPress installs. <a href="" class="link">More Details →</a></p>
+
+          </div>
+
+          <div class="addon-bottom-controls flex-container column">
+
+            <button class="btn btn-sm addon-btn">Install</button>
+            <a href="" class="link addon-link">Download</a>
+          </div>
+        </div>
+
+
+        <!--Addon container (Installed and activated status)-->
+        <div class="addon-container container-shadow flex-container column">
+          <svg class="icon-64">
+            <use xlink:href="img/icons.svg#addons-multisitetools" />
+          </svg>
+
+          <div class="addon-content flex-container column">
+
+            <h5 class="addon-title">Multisite Tools</h5>
+            <p>Export a subsite as an SQL file that can then be imported as a single site install. <a href="" class="link">More Details →</a></p>
+
+          </div>
+
+          <div class="addon-bottom-controls flex-container column">
+
+            <div class="flex-container installed-activated-icon">
+
+              <svg class="icon-24">
+                <use xlink:href="img/icons.svg#license-checked" />
+              </svg>
+
+              <p class="installed-activated-text bold">Installed & Activated</p>
+            </div>
+
+            <a href="" class="link addon-link">Download</a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <br /><br />
+
+
+
+      <!--Video select container-->
+      <div class="video-container container-shadow flex-container">
+        <div class="column">
+          <svg class="icon-32 video-container-icon">
+            <use xlink:href="img/icons.svg#video" />
+          </svg>
+        </div>
+
+        <div class="column">
+          <h3>UI Walkthrough</h3>
+          <p>A brief walkthrough of the WP Migrate DB plugin showing all of the different options and explaining them.</p>
+        </div>
+      </div>
+
+
+
+      <br /><br />
+
+
+
+      <!--Sidebar (free version)-->
+      <div class="sidebar container-shadow">
+        <svg width="256" height="250" viewBox="0 0 256 250">
+          <use xlink:href="img/icons.svg#sidebar-graphic" />
+        </svg>
+
+        <div class="column sidebar-content">
+          <h3 class="text-primary">Get <span class="bold">20%</span> off</h3>
+
+          <p class="coupon-text">Submit your name and email and we’ll send you a coupon for 20% off your upgrade to the pro version.</p>
+
+          <input class="sidebar-input-text" type="" name="Email" value=" lewis@deliciousbrains.com" placeholder="">
+
+          <input class="sidebar-input-text" type="" name="Name" placeholder="Placeholder text...">
+
+          <button class="btn sidebar-btn">Send me the coupon</button>
+
+          <p class="sidebar-smalltext">We will not use your email for anything else and you can unsubscribe with 1-click anytime!</p>
+        </div>
+
+        <div class="sidebar-tweet-testimonial">
+          <div class="flex-container">
+
+            <h2 class="text-white full-opacity">@BoxyStudio</h2>
+
+            <div class="align-right">
+              <svg class="icon-16">
+                <use xlink:href="img/icons.svg#rating-star-active" />
+              </svg>
+              <svg class="icon-16">
+                <use xlink:href="img/icons.svg#rating-star-active" />
+              </svg>
+              <svg class="icon-16">
+                <use xlink:href="img/icons.svg#rating-star-active" />
+              </svg>
+              <svg class="icon-16">
+                <use xlink:href="img/icons.svg#rating-star-active" />
+              </svg>
+              <svg class="icon-16">
+                <use xlink:href="img/icons.svg#rating-star-active" />
+              </svg>
+            </div>
+          </div>
+
+          <p class="sidebar-tweet-text text-white">“Wow. WP Migrate DB Pro has made our local/live development a breeze. What a brilliant plugin. Worth every penny!</p>
+
+        </div>
+      </div>
+
+
+
+      <br /><br />
+
+
+
+      <!--Documentation Panel-->
+      <div class="documentation-panel container-shadow column">
+        <h2>Documentation</h2>
+        <ul>
+          <a href="">
+            <li class="link documentation-link">Getting Started</li>
+          </a>
+          <a href="">
+            <li class="link documentation-link">Debugging</li>
+          </a>
+          <a href="">
+            <li class="link documentation-link">CLI</li>
+          </a>
+          <a href="">
+            <li class="link documentation-link">Common Errors</li>
+          </a>
+          <a href="">
+            <li class="link documentation-link">How To</li>
+          </a>
+          <a href="">
+            <li class="link documentation-link">Addons</li>
+          </a>
+          <a href="">
+            <li class="link documentation-link">Multisite</li>
+          </a>
+          <a href="">
+            <li class="link documentation-link">Changelogs</li>
+          </a>
+        </ul>
       </div>
     </div>
-
-
-
-    <br /><br />
-
-
-
-    <!--Documentation Panel-->
-    <div class="documentation-panel container-shadow column">
-      <h2>Documentation</h2>
-      <ul>
-        <a href="">
-          <li class="link documentation-link">Getting Started</li>
-        </a>
-        <a href="">
-          <li class="link documentation-link">Debugging</li>
-        </a>
-        <a href="">
-          <li class="link documentation-link">CLI</li>
-        </a>
-        <a href="">
-          <li class="link documentation-link">Common Errors</li>
-        </a>
-        <a href="">
-          <li class="link documentation-link">How To</li>
-        </a>
-        <a href="">
-          <li class="link documentation-link">Addons</li>
-        </a>
-        <a href="">
-          <li class="link documentation-link">Multisite</li>
-        </a>
-        <a href="">
-          <li class="link documentation-link">Changelogs</li>
-        </a>
-      </ul>
-    </div>
-
-
-    <script src="http://localhost:35729/livereload.js" />
-    </script>
 
 </body>
 
