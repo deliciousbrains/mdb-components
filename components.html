@@ -8,6 +8,7 @@
   <link href="./css/flexboxgrid.min.css" rel="stylesheet" type="text/css" />
   <link href="./css/component-layout.css" rel="stylesheet" type="text/css" />
   <link href="./css/style.css" rel="stylesheet" type="text/css" />
+  <link href="./css/wp-overrides.css" rel="stylesheet" type="text/css" />
   </meta>
 </head>
 
@@ -402,7 +403,7 @@
       <!--Checkbox-->
       <ul>
         <li>
-          <input type="checkbox" class="default-checkbox" name="" value="">
+          <input type="checkbox" class="checkbox-default" name="" value="">
           <label>Checkbox label</label>
         </li>
       </ul>
@@ -437,8 +438,9 @@
       <!--Slider Switch-->
       <div class="slider-switch-bg">
         <div class="slider-switch-active">
-          <div style="margin-left:4rem;" class="slider-switch">
-          </div>
+          <button>
+            <div style="margin-left:4rem;" class="slider-switch"></div>
+          </button>
         </div>
       </div>
 
@@ -583,7 +585,7 @@
 
         <tr class="flex-container">
           <td style="flex-grow:10;">
-            <input type="checkbox" name="" value="">
+            <input type="checkbox" class="checkbox-default" name="" value="">
             <label>File path goes here</label>
           </td>
           <td style="flex-grow:2;">
@@ -606,7 +608,7 @@
         </tr>
         <tr class="flex-container">
           <td style="flex-grow:10;">
-            <input type="checkbox" name="" value="">
+            <input type="checkbox" class="checkbox-default" name="" value="">
             <label>File path goes here</label>
           </td>
           <td style="flex-grow:2;">
@@ -643,7 +645,7 @@
           <td style=" flex-grow:6;">
             <h5>Search</h5>
           </td>
-          <td style="flex-grow:2;">
+          <td style="flex-grow:2.2;">
           </td>
           <td style="flex-grow:6;">
             <h5>Replace</h5>
@@ -745,7 +747,7 @@
 
 
       <!--Standard Container-->
-      <div class="container">
+      <div class="container-default">
         <p>Content goes here</p>
       </div>
 
@@ -782,30 +784,27 @@
 
 
       <!--Container toggle (inactive)-->
-      <div class="container-toggle">
-        <button class="btn-no-outline">
+      <button class="btn-container-toggle btn-no-outline">
+        <div class="container-toggle">
           <div class="flex-container margin-bottom">
             <h5>Compare & Remove</h5>
-            <!--<svg class="align-right" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-          <g fill="none" fill-rule="evenodd" transform="translate(3 3)">
-            <circle cx="9" cy="9" fill="#0777ef" r="9" />
-            <path d="m5 9.5 3.2 2.5 4.8-6" stroke="#fff" stroke-width="2" />
-          </g>
-        </svg>-->
+            <!--<svg class="icon-24 align-right">
+            			<use xlink:href="img/icons.svg#check-circular" />
+            </svg>-->
           </div>
           <p>Migrate new/updated files and clean options</p>
-        </button>
-      </div>
+        </div>
+      </button>
 
 
 
-      <br />
+      <br /><br />
 
 
 
       <!--Container toggle (active)-->
-      <div class="container-toggle container-toggle-active">
-        <button class="btn-no-outline">
+      <button class="btn-container-toggle btn-no-outline">
+        <div class="container-toggle container-toggle-active">
           <div class="flex-container margin-bottom">
             <h5>Compare & Remove</h5>
             <svg class="icon-24 align-right">
@@ -813,8 +812,8 @@
             </svg>
           </div>
           <p>Migrate new/updated files and clean options</p>
-        </button>
-      </div>
+        </div>
+      </button>
 
 
 
@@ -882,7 +881,7 @@
           <button class="btn btn-sm btn-stroke migration-progress-btn">CANCEL</button>
 
           <div class="align-right">
-            <input type="checkbox" name="" value="" checked>
+            <input type="checkbox" class="checkbox-default" name="" value="" checked>
             <label>Pause before replacing migrated tables</label>
           </div>
         </div>
@@ -987,21 +986,31 @@
                 <p class="twitter-handle text-white">@mor10</p>
 
                 <div class="align-right">
-                  <svg class="icon-16">
-                    <use xlink:href="img/icons.svg#rating-star-active" />
-                  </svg>
-                  <svg class="icon-16">
-                    <use xlink:href="img/icons.svg#rating-star-active" />
-                  </svg>
-                  <svg class="icon-16">
-                    <use xlink:href="img/icons.svg#rating-star-active" />
-                  </svg>
-                  <svg class="icon-16">
-                    <use xlink:href="img/icons.svg#rating-star-active" />
-                  </svg>
-                  <svg class="icon-16">
-                    <use xlink:href="img/icons.svg#rating-star-active" />
-                  </svg>
+                  <a href="">
+                    <svg class="icon-16">
+                      <use xlink:href="img/icons.svg#rating-star-active" />
+                    </svg>
+                  </a>
+                  <a href="">
+                    <svg class="icon-16">
+                      <use xlink:href="img/icons.svg#rating-star-active" />
+                    </svg>
+                  </a>
+                  <a href="">
+                    <svg class="icon-16">
+                      <use xlink:href="img/icons.svg#rating-star-active" />
+                    </svg>
+                  </a>
+                  <a href="">
+                    <svg class="icon-16">
+                      <use xlink:href="img/icons.svg#rating-star-active" />
+                    </svg>
+                  </a>
+                  <a href="">
+                    <svg class="icon-16">
+                      <use xlink:href="img/icons.svg#rating-star-active" />
+                    </svg>
+                  </a>
                 </div>
               </div>
 
@@ -1089,21 +1098,31 @@
           <div class="review-container flex-container">
             <h2 class="semibold text-primary">Help support WP Migrate DB, review it on WP.org...</h2>
             <div class="review-stars">
-              <svg class="icon-16">
-                <use xlink:href="img/icons.svg#rating-star-inactive" />
-              </svg>
-              <svg class="icon-16">
-                <use xlink:href="img/icons.svg#rating-star-inactive" />
-              </svg>
-              <svg class="icon-16">
-                <use xlink:href="img/icons.svg#rating-star-inactive" />
-              </svg>
-              <svg class="icon-16">
-                <use xlink:href="img/icons.svg#rating-star-inactive" />
-              </svg>
-              <svg class="icon-16">
-                <use xlink:href="img/icons.svg#rating-star-inactive" />
-              </svg>
+              <a href="">
+                <svg class="icon-16">
+                  <use xlink:href="img/icons.svg#rating-star-inactive" />
+                </svg>
+              </a>
+              <a href="">
+                <svg class="icon-16">
+                  <use xlink:href="img/icons.svg#rating-star-inactive" />
+                </svg>
+              </a>
+              <a href="">
+                <svg class="icon-16">
+                  <use xlink:href="img/icons.svg#rating-star-inactive" />
+                </svg>
+              </a>
+              <a href="">
+                <svg class="icon-16">
+                  <use xlink:href="img/icons.svg#rating-star-inactive" />
+                </svg>
+              </a>
+              <a href="">
+                <svg class="icon-16">
+                  <use xlink:href="img/icons.svg#rating-star-inactive" />
+                </svg>
+              </a>
             </div>
           </div>
         </div>
@@ -1286,21 +1305,31 @@
             <h2 class="text-white full-opacity">@BoxyStudio</h2>
 
             <div class="align-right">
-              <svg class="icon-16">
-                <use xlink:href="img/icons.svg#rating-star-active" />
-              </svg>
-              <svg class="icon-16">
-                <use xlink:href="img/icons.svg#rating-star-active" />
-              </svg>
-              <svg class="icon-16">
-                <use xlink:href="img/icons.svg#rating-star-active" />
-              </svg>
-              <svg class="icon-16">
-                <use xlink:href="img/icons.svg#rating-star-active" />
-              </svg>
-              <svg class="icon-16">
-                <use xlink:href="img/icons.svg#rating-star-active" />
-              </svg>
+              <a href="">
+                <svg class="icon-16">
+                  <use xlink:href="img/icons.svg#rating-star-active" />
+                </svg>
+              </a>
+              <a href="">
+                <svg class="icon-16">
+                  <use xlink:href="img/icons.svg#rating-star-active" />
+                </svg>
+              </a>
+              <a href="">
+                <svg class="icon-16">
+                  <use xlink:href="img/icons.svg#rating-star-active" />
+                </svg>
+              </a>
+              <a href="">
+                <svg class="icon-16">
+                  <use xlink:href="img/icons.svg#rating-star-active" />
+                </svg>
+              </a>
+              <a href="">
+                <svg class="icon-16">
+                  <use xlink:href="img/icons.svg#rating-star-active" />
+                </svg>
+              </a>
             </div>
           </div>
 
