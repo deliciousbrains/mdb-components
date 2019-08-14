@@ -1,6 +1,4 @@
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; }
-
+@charset "UTF-8";
 .wpmdb {
   /*Font styles*/
   /*Input styling*/
@@ -34,15 +32,12 @@ body {
   /*Addon containers*/
   /*Free Advert Modal*/
   /*Sidebar*/ }
-  .wpmdb .wrapper {
-    max-width: 1280px;
-    margin: 100px; }
-  .wpmdb .html {
-    font-size: 10px; }
   .wpmdb a {
     margin: 0;
     cursor: pointer;
     text-decoration: none; }
+  .wpmdb a:focus {
+    box-shadow: none !important; }
   .wpmdb button {
     padding: 0;
     margin: 0;
@@ -66,7 +61,7 @@ body {
   .wpmdb label,
   .wpmdb p {
     color: rgba(0, 0, 0, 0.8);
-    font-size: 0.8rem;
+    font-size: 0.8rem !important;
     font-weight: 400;
     line-height: 1.5; }
   .wpmdb h1,
@@ -87,6 +82,7 @@ body {
     padding: 0; }
   .wpmdb li {
     margin-top: 0.25rem;
+    margin-bottom: 0px !important;
     list-style: none;
     margin-bottom: 0; }
   .wpmdb .pos-relative {
@@ -143,15 +139,28 @@ body {
     width: 128px;
     height: 128px; }
   .wpmdb input[type="checkbox"] {
-    cursor: pointer; }
+    cursor: pointer;
+    margin-top: 0px !important;
+    -moz-box-shadow: inset 0 0 0 #ffffff;
+    -webkit-box-shadow: inset 0 0 0 #ffffff;
+    box-shadow: inset 0 0 0 #ffffff; }
+  .wpmdb input[type="checkbox"]:checked:before {
+    color: #236DE7 !important; }
+  .wpmdb .checkbox-default {
+    margin-top: 0px !important;
+    margin-right: 0px !important;
+    border-radius: 2px !important; }
   .wpmdb input[type="text"] {
     background: #FFFFFF;
     border: 1px solid #D6D6D6;
     border-radius: 3px;
-    padding: 0.6rem;
+    padding: 10px 10px !important !important;
     font-size: 0.8rem;
     width: 22rem;
     box-sizing: border-box; }
+  .wpmdb input[type=radio] {
+    margin-top: 0px !important;
+    margin-right: 0px !important; }
   .wpmdb input:read-only {
     background: rgba(0, 0, 0, 0.03); }
   .wpmdb input:-moz-read-only {
@@ -178,7 +187,7 @@ body {
     -moz-appearance: none;
     appearance: none;
     width: 2.2rem;
-    height: 1.2rem;
+    height: 1.3rem !important;
     background: #d6d6d6;
     border-radius: 10rem;
     position: relative;
@@ -204,6 +213,10 @@ body {
     transition: all 0.2s ease-in-out; }
   .wpmdb input[type="checkbox"].switch_1:checked:after {
     left: calc(100% - 1.2rem); }
+  .wpmdb input[type=checkbox].switch_1:checked:before {
+    content: "" !important;
+    color: #236DE7 !important;
+    display: none !important; }
   .wpmdb .container-shadow {
     background: #FFFFFF;
     border: 1px solid #D6D6D6;
@@ -407,7 +420,8 @@ body {
     opacity: 0.3;
     margin: 0 0.5rem; }
   .wpmdb .accordion-checkbox {
-    margin-right: 0.2rem; }
+    margin-right: 1rem !important;
+    border-radius: 2px !important; }
   .wpmdb .nested-accordion-expanded {
     background: #45719B;
     box-shadow: 0 -2px 1px 0 rgba(0, 0, 0, 0.05), 0 -1px 1px 0 rgba(0, 0, 0, 0.05);
@@ -642,7 +656,7 @@ body {
     border-radius: 3px;
     overflow: scroll; }
   .wpmdb .container-table-text {
-    margin: 0.2rem;
+    margin: 0.2rem 0.2rem !important !important;
     padding: 0.1rem 1rem; }
   .wpmdb .container-table-text:hover {
     background: #A5DDF1; }
@@ -684,7 +698,7 @@ body {
     margin-top: 1.75rem;
     width: 100%; }
   .wpmdb .migration-percentage {
-    font-size: 1.6rem;
+    font-size: 1.6rem !important;
     font-weight: 400;
     color: #236DE7;
     margin-right: 0.5rem; }
@@ -708,7 +722,7 @@ body {
   .wpmdb .migration-complete-summary {
     margin-top: 2rem;
     opacity: 1;
-    font-size: 1.06rem;
+    font-size: 1.06rem !important;
     font-weight: 300;
     margin-bottom: 2rem; }
   .wpmdb .migration-complete-close-btn {
