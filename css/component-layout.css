@@ -1,12 +1,20 @@
+/*System UI font*/
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; }
+
 .wpmdb {
+  /*Wrapper to lay out the component*/
   /*Heading for component library*/
   /*Label for components*/ }
+  .wpmdb .wrapper {
+    max-width: 1280px;
+    margin: 100px; }
   .wpmdb .component-heading {
     font-size: 1.75rem;
     font-weight: 300;
     margin-bottom: 4rem; }
   .wpmdb .component-label {
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
     margin-top: 4rem;
     margin-bottom: 2rem; }
