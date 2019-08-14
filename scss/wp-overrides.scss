@@ -1,0 +1,77 @@
+/*WordPress Dashboard Overrides*/
+
+.wpmdb {
+
+li {
+  margin-bottom: 0px!important;
+}
+
+label {
+  font-size: 0.8rem!important;
+}
+
+p {
+  font-size: 0.8rem!important;
+}
+
+a:focus {
+  box-shadow: none!important;
+}
+
+input[type=text] {
+  padding: 10px 10px!important;
+}
+
+input[type=checkbox] {
+  margin-top: 0px!important;
+  -moz-box-shadow: inset 0 0 0 #ffffff;
+  -webkit-box-shadow: inset 0 0 0 #ffffff;
+  box-shadow: inset 0 0 0 #ffffff;
+}
+
+input[type="checkbox"].switch_1 {
+  height: 1.3rem!important;
+}
+
+input[type=checkbox].switch_1:checked:before {
+  content: "\f147"!important;
+  color: #236DE7!important;
+  display: none!important;
+}
+
+input[type="checkbox"]:checked:before {
+  color: #236DE7!important;
+}
+
+input[type=radio] {
+  margin-top: 0px!important;
+  margin-right: 0px!important;
+}
+
+.accordion-checkbox {
+  margin-right: 1rem!important;
+  border-radius: 2px!important;
+}
+
+.checkbox-default {
+  margin-top: 0px!important;
+  margin-right: 0px!important;
+  border-radius: 2px!important;
+}
+
+.container-table-text {
+  margin: 0.2rem 0.2rem!important !important;
+}
+
+.migration-complete-summary {
+  font-size: 1.06rem!important;
+}
+
+.migration-percentage {
+  font-size: 1.6rem!important;
+}
+
+.component-label {
+  font-size: 1.5rem!important;
+}
+}
