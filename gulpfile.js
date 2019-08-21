@@ -36,3 +36,6 @@ gulp.task('sass', function(){
 gulp.task('watch',function() {
 return gulp.watch('scss/**/*.scss',gulp.series('sass'));
 });
+
+//Default task
+gulp.task('default', gulp.parallel('svgstore', 'sass'));
